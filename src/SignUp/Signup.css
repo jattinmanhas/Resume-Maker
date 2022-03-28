@@ -54,6 +54,11 @@
         font-size: medium;
 }
 
+.signup__button:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: brown;
+}
+
 .signup__companies{
     margin-top: 2.2rem;
 }
