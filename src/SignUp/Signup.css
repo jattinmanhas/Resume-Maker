@@ -1,0 +1,116 @@
+.signup__container{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 500px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    margin-top: 1rem;
+}
+
+.signup__container a{
+    text-decoration: none;
+}
+
+.signup__container .signup__form p {
+    color: red;
+  }
+
+  .signup__form h1{
+      color: orange;
+      padding-top: 5px;
+  }
+
+  .signup__form h3{
+      font-weight: 400;
+      padding-top: 1rem;
+      color: #46464e;
+  }
+
+.signup__form input{
+    padding: 20px 10px 15px;
+    width: 330px;
+    margin-top: 1rem;
+}
+
+::placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    position: relative;
+    /* bottom: 10px; */
+  }
+  
+.signup__button{
+        padding: 10px 56px;
+        width: 330px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background: #e44747;
+        color: #f0f2f7;
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: medium;
+}
+
+.signup__companies{
+    margin-top: 2.2rem;
+}
+
+.signup__companies p{
+    display: inline;
+}
+
+.signup__companies .Facebook__logo i{
+    height: 18px;
+    width: 18px;
+}
+
+.signup__companies .Facebook__logo{ 
+    color: white;
+    background-color: #1878f2;
+    padding: 10px 12px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.Google__logo{
+    border: 3px solid #1878f2;
+    padding: 8px 12px;
+    background-color: #1878f2;
+    color: white;
+    border-radius: 5px;
+}
+
+.signup__companies .Google__logo img{
+    max-height: 48px;
+    max-width: 48px;
+    background-color: white;
+    padding: 8px 12px;
+    position: relative;
+    bottom: -13px;
+    left: -13px;
+    border-radius: 5px;
+}
+
+.signup__forgot-password{
+    margin-top: 2rem;
+    background-color: #f6f5f4;
+    padding: 1rem;
+}
+
+.signup__forgot-password a:first-child{
+    display: block;
+    color: #1878f2;
+    padding-bottom: 8px;
+}
+
+.signup__forgot-password a{
+    color: #1878f2;
+    padding-bottom: 1rem;
+}
+
+.signup__forgot-password span{
+    padding-bottom: 1rem;
+}
