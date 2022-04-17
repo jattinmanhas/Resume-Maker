@@ -28,7 +28,7 @@ const Signin = () => {
       <form onSubmit={onSubmit}>
         <input placeholder="Email" type="email" ref={emailRef} />
         <input placeholder="Password" type="password" ref={psdRef} />
-        <button type="submit">Sign In</button>
+        <button className="btn-signup" type="submit">Sign In</button>
         <p onClick={forgotPasswordHandler}>Forgot Password?</p>
       </form>
     </div>

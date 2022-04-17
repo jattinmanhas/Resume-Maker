@@ -123,7 +123,7 @@ const Signup = () => {
         <input placeholder="Email" type="email" ref={emailRef} />
         <input placeholder="Name" type="name" ref={nameRef} />
         <input placeholder="Password" type="password" ref={psdRef} />
-        <button type="submit">Register</button>
+        <button className="btn-signup" type="submit">Register</button>
       </form>
     </div>
   );

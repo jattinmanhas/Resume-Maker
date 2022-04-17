@@ -202,3 +202,9 @@
     max-width: 400px;
     margin-bottom: 18px;
   }
+
+  @media screen and (max-width: 960px) {
+    .btn-signup{
+          display: block;
+      }
+  }
