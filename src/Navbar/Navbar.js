@@ -3,10 +3,12 @@ import  Button  from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './DropdownTools';
+import { useUserContext } from "../context/userContext";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const { user, logoutUser } = useUserContext();
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
