@@ -1,0 +1,53 @@
+.colored{
+    width:100vw;
+    height:auto;
+    margin:0;
+    padding:5rem 25%;
+    background:  #F7F7F7;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 2rem;
+    box-shadow: 1rem 0.5rem 1rem grey;
+  }
+    .heading{
+      font-size: 3.5rem;
+      /* color:#3A3845; */
+      color:#54BAB9;
+      margin:2rem auto;
+    }
+  .para{
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    word-spacing: 0.25rem;
+    color:#826F66;
+    }
+
+    
+  .white{
+    margin: 2.5rem 0;
+    width:100vw;
+    height:auto;
+
+    padding:5rem 10%;
+    background:  #fff;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    border-radius: 2rem;
+
+  }
+  .heading-h2{
+    font-size: 2.5rem;
+    margin:1.5rem auto;
+  }
+  b{
+    color:#54BAB9;
+  }
+
+  .heading-center{
+      font-size: 3rem;
+    color:#54BAB9;
+    text-align: center;
+    padding:2rem;
+  }

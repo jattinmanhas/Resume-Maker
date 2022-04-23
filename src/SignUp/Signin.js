@@ -23,7 +23,7 @@ const Signin = () => {
   };
 
   return (
-    <div className="form">
+    <div className="form-signup">
       <h2> Login </h2>
       <form onSubmit={onSubmit}>
         <input placeholder="Email" type="email" ref={emailRef} />

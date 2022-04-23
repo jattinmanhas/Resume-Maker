@@ -1,0 +1,124 @@
+
+label{
+    text-align: center;
+    display:block;
+    padding: 1rem;
+}
+input{
+    width:80%;
+    border: 1px solid grey;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px 5px lightgrey;
+    margin: 0 10%;
+    padding: 0 2rem;
+}
+.btn-input{
+    background-color:  rgb(84, 243, 179);
+    border-radius: 5rem;
+    padding:1rem 2rem;
+    color:white;
+    font-size: 1.3rem;
+    font-weight: bold;
+   
+}
+.btn-input:hover{
+    background-color:  rgb(84, 243, 179);
+    border-radius: 10rem;
+    padding:1.2rem 2rem;
+    color:white;
+   
+}
+/* input[type="text"] {
+   
+width:100%;
+} */
+
+
+
+
+/* column preview template */
+h1,h3,p{
+    display: inline-block;
+    padding: 5px 10px;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    border-radius: 100px 100px;
+    object-fit: cover;
+}
+.instituteName{
+    display:block;
+}
+
+.col-preview{
+
+    padding:5% 1%;
+    
+}
+.preview{
+    border:0.5px solid grey;
+    padding: 2px;
+}
+.preview-heading-3{
+    background-color: rgb(84, 243, 179);
+    color:white;
+    margin:0 0 1rem;
+    padding:2% 5%;
+}
+.preview-body{
+    background-color: white;
+    padding: 2% 5%;
+    text-align: left;
+}
+.preview-h3{
+    display: block;
+}
+
+@media print { 
+   .no-print{
+       display: none;
+   }
+    .printme  { display: block;}
+    form{
+        display:none;
+    }
+    
+    h1{
+        font-size:16pt;
+    }
+    h1,h3,p{
+        display: inline-block;
+        padding: 3pt 8t;
+        font-size:14pt;
+    }
+    .col-preview{
+    
+        padding:10pt 5pt;
+        
+    }
+    .preview{
+        border:0.5pt solid grey;
+        border-radius: 5pt;
+        padding: 1pt;
+    }
+    .preview-heading-3{
+        background-color:  rgb(84, 243, 179);
+        color:white;
+        margin:0 0 16pt;
+        padding:20pt 50pt;
+    }
+    .preview-body{
+        background-color: white;
+        padding: 15pt 50pt;
+        text-align: left;
+    }.skill{
+        color:rgb(86, 86, 214);
+        word-spacing: 40pt;
+
+    }
+    .preview-h3{
+        display: block;
+    }
+}

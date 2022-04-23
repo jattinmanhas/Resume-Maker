@@ -1,0 +1,49 @@
+.about-colored{
+    width:100vw;
+    height:auto;
+    margin:0;
+    padding:5rem 25%;
+    background:  #F7F7F7;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 2rem;
+    box-shadow: 1rem 0.5rem 1rem grey;
+  }
+    .about-heading{
+      font-size: 3.5rem;
+      /* color:#3A3845; */
+      color:#54BAB9;
+      margin:2rem auto;
+    }
+  .about-p{
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    word-spacing: 0.25rem;
+    color:#826F66;
+    }
+  
+  
+  .about-white{
+      margin: 2.5rem 0;
+      width:100vw;
+      height:auto;
+  
+      padding:5rem 10%;
+      background:  #fff;
+      text-align: left;
+      text-decoration: none;
+      display: block;
+      border-radius: 2rem;
+  
+    }
+    .white-heading{
+      font-size: 2.5rem;
+      margin:1.5rem auto;
+    }
+    b{
+      color:#54BAB9;
+    }
+  
+  
+  

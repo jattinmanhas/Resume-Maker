@@ -1,0 +1,44 @@
+.main-ul{
+    display: inline-flex;
+    flex-direction: column;
+    width:23%;
+    margin:0px;
+    padding: 2rem 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: sans-serif;
+  }
+  .footer-li{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    color:grey;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .footer-li:hover{
+    color:white;
+    background-color: grey;
+    font: 1.25rem bold;
+    padding-left: 1rem;
+  }
+  .footerLink{
+    color:grey;
+    text-decoration: none;
+  }
+  .footerLink:hover{
+    color:white;
+    text-decoration: none;
+  }
+  
+  
+  .myfooter{
+  padding: 4rem 5rem;
+  margin:4rem 0px 0px;
+  display:block;
+  background: #FFF;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  }

@@ -5,7 +5,7 @@
     font-family: "Nunito", sans-serif;
   }
   
-  button {
+  .form-signup button {
     border: none;
     outline: none;
     width: 100%;
@@ -130,7 +130,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     flex-direction: column;
   }
   
@@ -145,7 +145,7 @@
     width: 93%;
   }
   
-  button {
+  .form-signup button {
     background-color: teal;
     border: none;
     color: white;

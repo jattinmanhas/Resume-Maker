@@ -1,0 +1,27 @@
+/* action container */
+.action-container{
+    padding:2rem 1.5rem;
+    justify-content: center;
+    background: #F7F7F7;
+    margin: auto 0px;
+    margin-top: 5rem;
+  }
+  .action-heading{
+    text-align: center;
+    color:#54BAB9;
+    font-family:monospace;
+  }
+  .action-p{
+    font-size: 1.25rem;
+    justify-content: center;
+    word-wrap: break-word;
+    margin-top: 2rem;
+  }
+  
+.p-main{
+  font-weight: bold;
+}
+.row{
+  margin-bottom: 2rem;
+}
+ 
