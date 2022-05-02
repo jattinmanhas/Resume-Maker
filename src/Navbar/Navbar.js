@@ -83,17 +83,17 @@ function Navbar() {
               About Us
             </Link>
           </li>
-          <li>
+          <li className='nav-item'>
             <Link
               to='/sign-up'
-              className='nav-links-mobile'
+              className='nav-links'
               onClick={closeMobileMenu}
             >
-              Sign Up
+              {user ? <button onClick={logoutUser}>Log out</button>:<button className='btn'> Sign In</button> }
             </Link>
           </li>
         </ul>
-        <Button />
+        {/* <Button /> */}
       </nav>
     </>
   );

@@ -19,6 +19,7 @@ import Selector from "./Selector/Selector";
 import Template4 from "./Templates/Template4/Template4";
 import Template5 from "./Templates/Template5/Template5";
 import Template6 from "./Templates/Template6/Template6";
+import PhoneSignUp from "./SignUp/PhoneSignup";
 
 function App() {
   const { user, loading, error } = useUserContext();
@@ -201,6 +202,16 @@ function App() {
                 <Navbar />
                 < Selector />
                 <Footer />
+              </>
+            }
+          ></Route>
+
+<Route
+            path="/phoneSignUp"
+            element={
+              <>
+                <Navbar />
+                <PhoneSignUp/>
               </>
             }
           ></Route>

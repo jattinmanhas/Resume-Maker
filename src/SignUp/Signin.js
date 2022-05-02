@@ -3,6 +3,7 @@ import { useUserContext } from "../context/userContext";
 import "./Signup.css"
 import { auth } from "../firebase";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { Link } from "react-router-dom";
 
 const Signin = () => {
   const emailRef = useRef();
@@ -45,6 +46,9 @@ const Signin = () => {
         <button className="btn-signup" type="submit">Sign In</button>
         <p onClick={forgotPasswordHandler}>Forgot Password?</p>
         <button onClick={signInWithGoogle} className="btn-signup">Google Signin</button>
+      <Link to="/phoneSignUp">
+      <button className="btn-signup">Sign In with Phone Number</button>
+      </Link>
       </form>
     </div>
   );
