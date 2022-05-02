@@ -1,0 +1,32 @@
+.headBlog__container {
+  /* padding-top: 0px; */
+  background: linear-gradient(rgba(56, 216, 197, 0.6), rgba(43, 24, 219, 0.1)) ;
+}
+
+.headerTitles__blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+  color: #fff;
+}
+
+.headerTitleSm {
+  position: absolute;
+  top: 18%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.headerTitleLg {
+  position: absolute;
+  top: 20%;
+  font-size: 100px;
+}
+
+.headerImg__blog {
+  width: 100%;
+  height: 450px;
+  /* margin-top: 80px; */
+  object-fit: cover;
+}

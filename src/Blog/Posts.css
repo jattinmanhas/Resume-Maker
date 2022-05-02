@@ -1,0 +1,12 @@
+.posts__blogs{
+     flex: 9;
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 2rem;
+}
+
+@media screen and (max-width:800px){
+  .posts__blogs{
+       justify-content: center;
+  }
+}

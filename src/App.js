@@ -3,14 +3,13 @@ import React from "react";
 import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Signup from "./SignUp/Signup";
+// import Signup from "./SignUp/Signup";
 import Auth from "./SignUp/auth";
 import { useUserContext } from "../src/context/userContext";
 import Footer from "./Footer/Footer";
 import Carousel from "./Carousel/Carousel";
 import Action from "./Action/Action";
 import ContactUs from "./ContactUs/ContactUs"
-import CareerBlog from "./CareerBlog/CareerBlog";
 import AboutUs from "./AboutUs/AboutUs";
 import Template1 from "./Templates/Template1/Template1";
 import Template2 from "./Templates/Template2";
@@ -20,6 +19,15 @@ import Template4 from "./Templates/Template4/Template4";
 import Template5 from "./Templates/Template5/Template5";
 import Template6 from "./Templates/Template6/Template6";
 import PhoneSignUp from "./SignUp/PhoneSignup";
+import Blog from './Blog/Blog';
+import SinglePost1 from './Blog/SinglePost/SinglePost';
+import SinglePost2 from './Blog/SinglePost/SinglePost2';
+import SinglePost3 from './Blog/SinglePost/SinglePost3';
+import SinglePost4 from './Blog/SinglePost/SinglePost4';
+import SinglePost5 from './Blog/SinglePost/SinglePost5';
+import SinglePost6 from './Blog/SinglePost/SinglePost6';
+import SinglePost7 from './Blog/SinglePost/SinglePost7';
+import SinglePost8 from './Blog/SinglePost/SinglePost8';
 
 function App() {
   const { user, loading, error } = useUserContext();
@@ -69,11 +77,74 @@ function App() {
               <>
 
                 <Navbar />
-                < CareerBlog />
+                < Blog />
                 <Footer />
               </>
             }
           ></Route>
+
+        <Route path="/singlepage1"
+        element={
+          <>
+          <Navbar/>
+          <SinglePost1 />
+          <Footer/>
+          </>
+        }>
+          </Route>
+        <Route path="/singlepage2"
+        element={
+          <>
+          <Navbar/>
+          <SinglePost2 />
+          <Footer/>
+          </>
+        }>
+          </Route>
+        <Route path="/singlepage3"
+        element={
+          <>
+          <Navbar/>
+          <SinglePost3 />
+          <Footer/>
+          </>
+        }>
+          </Route>
+        <Route path="/singlepage4"
+        element={
+          <>
+          <Navbar/>
+          <SinglePost4 />
+          
+          </>
+        }>
+          </Route>
+        <Route path="/singlepage5"
+        element={
+          <>
+          <Navbar/>
+          <SinglePost5 />
+          
+          </>
+        }>
+          </Route>
+        <Route path="/singlepage6"
+        element={
+          <>
+          <Navbar/>
+          <SinglePost6 />
+         
+          </>
+        }>
+          </Route>
+        <Route path="/singlepage7"
+        element={
+          <>
+          <Navbar/>
+          <SinglePost7 />
+          </>
+        }>
+          </Route>
 
           <Route
             path="/about-us"
