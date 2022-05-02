@@ -28,6 +28,7 @@ import SinglePost5 from './Blog/SinglePost/SinglePost5';
 import SinglePost6 from './Blog/SinglePost/SinglePost6';
 import SinglePost7 from './Blog/SinglePost/SinglePost7';
 import SinglePost8 from './Blog/SinglePost/SinglePost8';
+import Queries from "./Queries/Contact"
 
 function App() {
   const { user, loading, error } = useUserContext();
@@ -65,7 +66,7 @@ function App() {
             element={
               <>
                 <Navbar />
-                < ContactUs />
+                < Queries />
                 <Footer />
               </>
             }
@@ -142,6 +143,15 @@ function App() {
           <>
           <Navbar/>
           <SinglePost7 />
+          </>
+        }>
+          </Route>
+          
+        <Route path="/singlepage8"
+        element={
+          <>
+          <Navbar/>
+          <SinglePost8 />
           </>
         }>
           </Route>

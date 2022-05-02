@@ -8,10 +8,10 @@ function Posts() {
     <div className="posts__blogs">
       <Link to="/singlepage1" style={{ textDecoration: "none" }}>
         <Post
-          src="https://images.unsplash.com/photo-1581578017426-04fbc2b0511e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-          postTitle="How to Start Crop Farming Business For Highest Profits"
-          postDate="28 Sept. 2021"
-          postDesc="Before starting crop farming business, it is necessary to assess the available resources. As a conscious farmer, you will have to evaluate the amount of water, land, and the means and labor available. The following vital points will be the choice of crops and the purpose of their cultivation. "
+          src="https://cdn-images.zety.com/pages/job_hunting_nightmares_zety_7.jpg?fit=crop&h=260&dpr=2"
+          postTitle="Job Hunting Nightmares: What Are Recruiters Doing Wrong?"
+          postDate="28 Feb. 2022"
+          postDesc="The Great Resignation means major job ad scouring. Cringeworthy job ads and nightmare recruiters won’t cut it anymore! 1000+ American workers share the no-nos."
         />
       </Link>
 
