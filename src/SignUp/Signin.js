@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
 import "./Signup.css"
+import { auth } from "../firebase";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const Signin = () => {
   const emailRef = useRef();
@@ -22,14 +24,27 @@ const Signin = () => {
       });
   };
 
+  const signInWithGoogle = () =>{
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+    .then((re)=>{
+      console.log(re);
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+
+  }
+
   return (
     <div className="form-signup">
       <h2> Login </h2>
       <form onSubmit={onSubmit}>
-        <input placeholder="Email" type="email" ref={emailRef} />
-        <input placeholder="Password" type="password" ref={psdRef} />
+        <input className="login--input" placeholder="Email" type="email" ref={emailRef} />
+        <input className="login--input" placeholder="Password" type="password" ref={psdRef} />
         <button className="btn-signup" type="submit">Sign In</button>
         <p onClick={forgotPasswordHandler}>Forgot Password?</p>
+        <button onClick={signInWithGoogle} className="btn-signup">Google Signin</button>
       </form>
     </div>
   );

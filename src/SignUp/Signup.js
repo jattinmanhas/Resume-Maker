@@ -120,9 +120,9 @@ const Signup = () => {
     <div className="form-signup">
       <h2> New User</h2>
       <form onSubmit={onSubmit}>
-        <input placeholder="Email" type="email" ref={emailRef} />
-        <input placeholder="Name" type="name" ref={nameRef} />
-        <input placeholder="Password" type="password" ref={psdRef} />
+        <input className="login--input" placeholder="Email" type="email" ref={emailRef} />
+        <input className="login--input" placeholder="Name" type="name" ref={nameRef} />
+        <input className="login--input" placeholder="Password" type="password" ref={psdRef} />
         <button className="btn-signup" type="submit">Register</button>
       </form>
     </div>

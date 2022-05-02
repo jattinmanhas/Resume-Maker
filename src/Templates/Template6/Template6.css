@@ -1,3 +1,4 @@
+
 label{
     text-align: center;
     display:block;
@@ -27,6 +28,11 @@ input{
     color:white;
    
 }
+.software-input{
+    width:auto; 
+    margin: 4px;
+    margin-left: 8%;
+}
 /* input[type="text"] {
    
 width:100%;
@@ -36,52 +42,48 @@ width:100%;
 
 
 /* column preview template */
+.resume{
+    text-align: center;
+}
 h3{
     font-size: 14px;
 }
 p{
-    font-size: 10px;
-    font-weight: bold;
-    line-break: strict;
+    font-size: 14px;
+    font-weight: 450;
+    color:black;
+}
+.p-alert{
+    color:red;
+    font-weight: light;
+}
+
+
+
+h1{
+    margin-left: 0;
+    padding-left: 0;
+    text-transform:capitalize;
 }
 h1,h3,p{
     display: inline-block;
     padding: 5px 10px;
 }
-.skill-set{
-    display: block;
+.bold-6{
+    color: #000;
+    text-transform:capitalize;
 }
 
 
-.skill-li-4{
-    list-style-type: none;
-    display:inline-block;
-    padding:0;
-    width:auto;
-    height:auto;
-    margin-left: 5px;
-    background: rgb(3, 3, 34);
-    border-radius: 20px;
-    color:white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.software-li{
+list-style-type: none;
+text-transform: capitalize;
+font-weight: bold;
 }
-.software-li4{
-    color: white;
-    padding: 0;
-    font-size: 1rem;
-    display:inline-block;
-    border-radius: 20px;
-    text-align: center;
-    margin: 0.5rem;
-    list-style-type: none;
-    text-transform: capitalize;
-    font-weight: bold;
-    background-color:  rgb(3, 3, 34);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    .row-software4{
-        margin:1px;
-    }
+.row-software{
+    margin:1px;
+}
 .img{
     width: 140px;
     height: 140px;
@@ -91,6 +93,7 @@ h1,h3,p{
 }
 .instituteName{
     display:block;
+    text-transform:capitalize;
 }
 
 .col-preview{
@@ -102,41 +105,73 @@ h1,h3,p{
     border:0.5px solid grey;
     padding: 2px;
 }
-.preview-heading-4{
-    background-color:white;
-    color:navy;
-    margin:0 0 1rem;
+.preview-heading-6{
+    background-color:#112B3C;
+    color:white;
+    margin:0 0;
     padding:2% 5%;
 }
-.preview-body-4{
+.preview-body{
     background-color: white;
-    padding: 2% 5%;
-    padding-left:5rem;
+    padding: 0%;
     text-align: left;
+    display:table;
+    clear: both;
 }
+/* div{
+    float:left;
+} */
+#personalInfo {
+
+width:35%;
+margin:0;
+background-color: rgba(239, 235, 235, 0.849);
+float:left;
+height:800px;
+}
+
+.skill{
+    color:rgb(29, 29, 32);
+    font-size: 14px;
+    word-spacing: 12px;
+    text-transform:capitalize;
+
+}
+.software{
+    word-spacing: 12px;
+    font-weight:500;
+    text-transform:capitalize;
+}
+#professionalInfo {
+   
+   float:right;
+    width:63%;
+margin:0;
+   
+    }
+
 .preview-h3{
     display: block;
-    
-}
-.main-h3{
-    display:inline-block;
+    margin:1px;
+    padding:2px;
+    line-height:1rem;
+    text-transform:capitalize;
+    font-weight: bold;
+    max-width: fit-content;
 }
 .preview-title-h3{
        
     display: block;
     font-weight: bold;
     color:navy;
+    text-transform:capitalize;
 }
 
 @media print { 
    .no-print{
        display: none;
    }
-    .printme  { 
-        display: block;
-        height:1000pt;
-    
-    }
+    .printme  { display: block;}
     form{
         display:none;
     }
@@ -149,12 +184,12 @@ h1,h3,p{
         display:inline;
     }
     p{
-        font-size: 8pt;
-        font-weight: bold;
+        font-size: 12pt;
+        font-weight: 450;
     }
     h1,h3,p{
         display: inline-block;
-        padding: 2pt;
+        padding: 5pt 10pt;
     }
     .img{
         width: 100pt;
@@ -166,31 +201,46 @@ h1,h3,p{
    
     .col-preview{
     
-        padding:5pt 5pt;
+        padding:10pt 5pt;
         
-    }
-    .inline-4{
-        display: inline-block;
     }
     .preview{
         border:0.5pt solid grey;
         border-radius: 5pt;
         padding: 1pt;
     }
-    .preview-heading-4{
-        background-color:  white;
-        color:navy;
-        margin:0 0 5pt;
-        padding:10pt;
+    .preview-heading-5{
+        background-color:navy;
+    color:white;
+        margin:0 0;
+        padding:15pt 30pt;
     }
     .preview-body{
         background-color: white;
-        padding: 10pt;
+        padding: 0pt;
         text-align: left;
-    }.skill{
-        color:rgb(86, 86, 214);
-        font-size: 16pt;
-        word-spacing: 30pt;
+    }
+    #personalInfo {
+
+        width:45%;
+        margin:0;
+        background-color: rgba(239, 235, 235, 0.849);
+        float:left;
+        height:800pt;
+        }
+     #professionalInfo {
+           
+           
+        width:55%;
+        margin:0;
+           float: right;
+           height: 800pt;
+           
+         }
+    .skill{
+        color:rgb(24, 24, 234);
+        font-size: 14pt;
+        word-spacing: 12pt;
 
     }
     .preview-h3{

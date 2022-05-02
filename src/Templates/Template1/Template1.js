@@ -14,7 +14,7 @@ export default function Template1(){
         higherEducation:'12th Medical/ 12th Non.Medical/12th Arts',
         school:'',
         higherEducationMarks:'',
-        collegeEducation:'B.A./B.Sc./B.E./...   ',
+        collegeEducation:' ',
         college:'',
         collegeEducationMarks:'',
         experience:''
@@ -202,7 +202,7 @@ window.print();
          >
           <h3>Full Name : </h3> 
           <span> <p>{variable.firstName} {variable.lastName}</p></span>
-          <span>  <img src={file}  className="img" alt="" /></span>
+          {/* <span>  <img src={file}  className="img" alt="" /></span> */}
           <br/>
          <h3>Email - Id : </h3> 
          <span> <p>{variable.email} </p></span>
@@ -222,42 +222,42 @@ window.print();
 
          
 
-            <h3 className="preview-h3"> <img src="./images/edu_icon.png" width="30px" height="30px" alt="" /> 
+            <h3 className="preview-h3">  
              Eductaion Details : </h3> 
           
 
-            <h3 className="preview-h3"> <img src="./images/colg_icon.png" width="30px" height="30px" alt="" />
+            <h3 className="preview-h3"> 
             {variable.higherEducation} 
              </h3>
              <span> <p className="instituteName"> <b>{variable.school}</b> </p></span>
 
             <span> <p > <b>Percentage :-</b>{variable.higherEducationMarks}</p></span>
 
-            <h3 className="preview-h3"> <img src="./images/colg_icon.png" width="30px" height="30px" alt="" />
+            <h3 className="preview-h3"> 
              {variable.collegeEducation} </h3> 
               <p  clasName="instituteName"> <b>{variable.college}</b> </p>
             <span> <p>  <b>Percentage :-</b> {variable.collegeEducationMarks} </p></span>
 
 
             <h3 className="preview-h3">
-            <img src="./images/project_icon.png" width="30px" height="30px" alt="" />
+           
                 Experience(Project/Job details): </h3> 
             <span> <p>{variable.experience} </p></span>
 
 
             <h3 className="preview-h3">
-            <img src="./images/skills_icon.png" width="30px" height="30px" alt="" />
+            
                 Skills </h3> 
             <span> <p className="skill"> {variable.skills}</p></span>
 
 
             <h3 className="preview-h3">
-            <img src="./images/profession_icon.png" width="30px" height="30px" alt="" />
+            
                 Profession </h3> 
             <span> <p > {variable.profession}</p></span>
 
             <h3 className="preview-h3">
-            <img src="./images/address_icon.png" width="30px" height="30px" alt="" />
+           
                 Address :  </h3> 
             <span> <p> {variable.address}</p></span>
 

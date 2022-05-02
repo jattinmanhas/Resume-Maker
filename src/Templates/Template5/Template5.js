@@ -19,6 +19,7 @@ export default function Template5(){
         skill7:'',
         skill8:'',
         address:'',
+        linkedin:'',
         higherEducation:'12th Medical/ 12th Non.Medical/12th Arts',
         school:'',
         higherEducationMarks:'',
@@ -28,7 +29,9 @@ export default function Template5(){
         expTitle:'',
         experience:'',
         expTitle2:'',
-        experience2:''
+        experience2:'',
+        certificates:'',
+        certificatesName:''
 
     })
    
@@ -69,7 +72,15 @@ window.print();
             onChange={event => setVariable({...variable, lastName : event.target.value})}
             ></input>
        
-                
+       <label>
+                   Profession  : 
+                  
+                   </label>   
+            <input 
+            type="text"
+            value={variable.profession}
+            onChange={event => setVariable({...variable, profession : event.target.value})}
+            ></input>
 
               
               <label>
@@ -93,14 +104,32 @@ window.print();
             onChange={event => setVariable({...variable, mobile : event.target.value})}
             ></input>  
              
-             <label>
-                   Profession  : 
+            <label>
+                   LinkedIn  : 
+                  
+            </label>   
+            <input 
+            type="text"
+            value={variable.linkedin}
+            onChange={event => setVariable({...variable, linkedin : event.target.value})}
+            ></input>
+               <label>
+                   Address  : 
                   
                    </label>   
             <input 
             type="text"
-            value={variable.profession}
-            onChange={event => setVariable({...variable, profession : event.target.value})}
+            value={variable.address}
+            onChange={event => setVariable({...variable, address : event.target.value})}
+            ></input>
+            <label>
+                   Interests : 
+                  
+                   </label>   
+            <input 
+            type="text"
+            value={variable.interests}
+            onChange={event => setVariable({...variable, interests : event.target.value})}
             ></input>
            <label>
                    Experience  : 
@@ -194,15 +223,7 @@ window.print();
             onChange={event => setVariable({...variable, skill8 : event.target.value})}
             ></input>
 
-           <label>
-                   Address  : 
-                  
-                   </label>   
-            <input 
-            type="text"
-            value={variable.address}
-            onChange={event => setVariable({...variable, address : event.target.value})}
-            ></input>
+         
            
             
            <label>
@@ -251,6 +272,22 @@ window.print();
                         placeholder="Enter Your Percentage"
                         onChange={event => setVariable({...variable, collegeEducationMarks : event.target.value})}
                         ></input>
+                      <label>
+                       Certificate / Diploma :
+                   </label>
+                   <p className="p-alert"> (If Any * )</p>
+                   <input 
+                         type="text"
+                        value={variable.certificatesName}
+                        placeholder="Enter certficate name here"
+                        onChange={event => setVariable({...variable , certificatesName : event.target.value})}
+                        ></input>
+                   <input 
+                         type="text"
+                        value={variable.certificates}
+                        placeholder="Enter certficate details here"
+                        onChange={event => setVariable({...variable , certificates : event.target.value})}
+                        ></input>
          
 
 
@@ -259,15 +296,7 @@ window.print();
             
            
            
-           <label>
-                   Interests : 
-                  
-                   </label>   
-            <input 
-            type="text"
-            value={variable.interests}
-            onChange={event => setVariable({...variable, interests : event.target.value})}
-            ></input>
+           
         
         <label> Thanks for using our Resume Builder</label>
             <input
@@ -303,48 +332,36 @@ window.print();
 
             <div className="preview-body ">
                 {/* Personal Information Column  with width = 20% */}
-                <div id="personalInfo">
-                <h3>Email:</h3> 
+                <div id="personalInfo5">
+                <h3 className="preview-h3">Email:</h3> 
                     < span> <p>{variable.email} </p></span>
-         
-                 <h3 >Mobile:</h3> 
+         <br/>
+                 <h3 className="preview-h3" >Mobile:</h3> 
                   <span> <p> {variable.mobile}</p></span>
                       <br/>
+                     
+
                       <h3 className="preview-h3">
-            <img src="./images/project_icon.png" width="30px" height="30px" alt="" />
+            
+                    LinkedIn        
+                    </h3>
+                    <span> <p> {variable.linkedin}</p></span>
+        <br/>
+        <h3 className="preview-h3" >
                 Interests : </h3> 
             <span> <p>{variable.interests} </p></span>
-
+            <br/>
            
 
             <h3 className="preview-h3">
-            <img src="./images/address_icon.png" width="30px" height="30px" alt="" />
+            
                 Address :  </h3> 
             <span> <p> {variable.address}</p></span>
-                </div>
-
-
-
-    {/* Professional Information column with width 80% */}
-
-
-
-                <div  id="professionalInfo">
-
-{/* Experience Details Here */}
-                <h3 className="preview-h3">
-            <img src="./images/project_icon.png" width="30px" height="30px" alt="" />
-                Experience(Project/Job details): </h3> 
-                <h3 className="preview-title-h3">{variable.expTitle} :</h3>
-            <span> <p>{variable.experience} </p></span>
-            <h3 className="preview-title-h3">{variable.expTitle2} </h3>
-            <span> <p>{variable.experience2} </p></span>
-
-
-{/* Skills Details Here */}
+            
+            {/* Skills Details Here */}
             <div className="skill-set">
             <h3 className="preview-h3">
-            <img src="./images/skills_icon.png" width="30px" height="30px" alt="" />
+            
                 Skills </h3> 
             <ul className="row">
                 <li className="skill-li"> {variable.skill1} </li>
@@ -362,24 +379,48 @@ window.print();
 
        
             </div>
+
+                </div>
+
+
+
+    {/* Professional Information column with width 80% */}
+
+
+
+                <div  id="professionalInfo5">
+
+{/* Experience Details Here */}
+                <h3 className="preview-h3">
+     
+                Experience(Project/Job details): </h3> 
+                <h3 className="preview-title-h3">{variable.expTitle} :</h3>
+            <span> <p>{variable.experience} </p></span>
+            <h3 className="preview-title-h3">{variable.expTitle2} </h3>
+            <span> <p>{variable.experience2} </p></span>
+
+
+
             
 
-            <h3 className="preview-h3"> <img src="./images/edu_icon.png" width="30px" height="30px" alt="" />  Eductaion Details : </h3> 
+            <h3 className="preview-h3"> Eductaion Details : </h3> 
            
 
-            <h3 className="preview-h3"> <img src="./images/colg_icon.png" width="30px" height="30px" alt="" />
+            <h3 className="preview-h3">
             {variable.higherEducation} 
              </h3>
              <span> <p clasName="instituteName"> <b>{variable.school}</b> </p></span>
 
             <span> <p  > <b>Percentage :-</b>{variable.higherEducationMarks}</p></span>
 
-            <h3 className="preview-h3"> <img src="./images/colg_icon.png" width="30px" height="30px" alt="" />
+            <h3 className="preview-h3">
              {variable.collegeEducation} </h3> 
              <span> <p  clasName="instituteName"> <b>{variable.college}</b> </p></span>
             <span> <p>  <b>Percentage :-</b> {variable.collegeEducationMarks} </p></span>
 
-           
+            <h3 className="preview-h3"> 
+             {variable.certificatesName} </h3> 
+            <span> <p className="PERSONAL-P">{variable.certificates} </p></span>
             </div>
             
             </div>

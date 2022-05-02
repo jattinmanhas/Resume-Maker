@@ -61,12 +61,14 @@ p{
 .skill-li{
     list-style-type: none;
     display:inline-block;
-    padding:2% 4%;
+    padding:0;
     width:auto;
     height:auto;
-    margin-left: 5px;
-    background: transparent;
-    color:navy;
+    margin: 5px;
+    background: rgb(6, 6, 43);
+    border-radius:2rem;
+    text-transform: capitalize;
+    color:#fff;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1,h3,p{
@@ -94,10 +96,11 @@ h1,h3,p{
     padding: 2px;
 }
 .preview-heading-5{
-    background-color:navy;
+    background-color:rgb(6, 6, 43);
     color:white;
     margin:0 0;
     padding:2% 5%;
+    border-radius: 0.5rem;
 }
 .preview-body{
     background-color: white;
@@ -105,19 +108,21 @@ h1,h3,p{
     text-align: left;
     display:table;
     clear: both;
+    
 }
 /* div{
     float:left;
 } */
-#personalInfo {
+#personalInfo5 {
 
 width:35%;
-margin:0;
+margin-right:0;
 background-color: rgba(239, 235, 235, 0.849);
 float:left;
 height:800px;
+
 }
-#professionalInfo {
+#professionalInfo5 {
    
    float:right;
     width:60%;
@@ -179,7 +184,7 @@ margin:0;
         padding: 1pt;
     }
     .preview-heading-5{
-        background-color:navy;
+        background-color:rgb(6, 6, 43);
     color:white;
         margin:0 0;
         padding:15pt 30pt;
@@ -189,18 +194,18 @@ margin:0;
         padding: 0pt;
         text-align: left;
     }
-    #personalInfo {
+    #personalInfo5 {
 
         width:35%;
         margin:0;
         background-color: rgba(239, 235, 235, 0.849);
         float:left;
-        height:A4;
+        height:auto;
         }
-     #professionalInfo {
+     #professionalInfo5 {
            
            
-        width:62%;
+        width:60%;
         margin:0;
            float: right;
            

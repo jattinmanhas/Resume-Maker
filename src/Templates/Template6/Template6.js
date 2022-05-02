@@ -1,8 +1,8 @@
 import React from "react"
 import { useState } from "react"
-import './Template2.css'
+import './Template6.css'
 
-export default function Template2(){
+export default function Template6(){
     const[variable,setVariable] = useState({
         firstName:'',
         lastName:'',
@@ -18,6 +18,7 @@ export default function Template2(){
         software4:'',
         software5:'',
         software6:'',
+        language:'',
         address:'',
         higherEducation:'',
         school:'',
@@ -29,15 +30,14 @@ export default function Template2(){
         experience:'',
         expTitle2:'',
         experience2:'',
+        diploma:'',
         certificates:'',
+        diplomaName:'',
         certificatesName:''
 
     })
-    const [file, setFile] = useState();
-    function handleChange(e) {
-        console.log(e.target.files);
-        setFile(URL.createObjectURL(e.target.files[0]));
-    }
+    
+   
 
 function print(){
 
@@ -48,14 +48,13 @@ window.print();
 
     return(
         <div className="row">
-            <h1 className="resume">Resume </h1>
+
             {/* Form Column */}
         <div className="col-lg-6 col-md-12 col-cm-12 no-print"> 
     
           
            <form>
-     
-               
+          
                 <label for="firstName">
                 First Name :  </label> 
                   
@@ -86,8 +85,7 @@ window.print();
             value={variable.profession}
             onChange={event => setVariable({...variable, profession : event.target.value})}
             ></input>
-            <label>Please Choose a profile picture.</label>
-                    <input type="file" onChange={handleChange} />
+              
               <label>
                    Email  : 
                    </label> 
@@ -146,14 +144,14 @@ window.print();
             <input 
               className="software-input"
             type="text"
-            placeholder="Enter Software interface"
+            placeholder="Enter Your Skill"
             value={variable.software1}
             onChange={event => setVariable({...variable,software1 : event.target.value})}
             ></input>
             <input 
             className="software-input"
             type="text"
-            placeholder="Enter Software Interface"
+            placeholder="Enter Your Skill"
             value={variable.software2}
             onChange={event => setVariable({...variable, software2 : event.target.value})}
             ></input>
@@ -161,32 +159,40 @@ window.print();
                         className="software-input" 
             type="text"
             value={variable.software3}
-            placeholder="Enter Software Interface"
+            placeholder="Enter Your Skill"
             onChange={event => setVariable({...variable, software3 : event.target.value})}
             ></input>
                         <input 
                         className="software-input"
             type="text"
             value={variable.software4}
-            placeholder="Enter Software Interface"
+            placeholder="Enter Your Skill"
             onChange={event => setVariable({...variable, software4 : event.target.value})}
             ></input>
                         <input 
                         className="software-input"
             type="text"
             value={variable.software5}
-            placeholder="Enter software interface"
+            placeholder="Enter Your Skill"
             onChange={event => setVariable({...variable, software5 : event.target.value})}
             ></input>
                         <input
                         className="software-input" 
             type="text"
             value={variable.software6}
-            placeholder="Enter Software Interface"
+            placeholder="Enter Your Skill"
             onChange={event => setVariable({...variable, software6 : event.target.value})}
             ></input>
                        
-          
+            <label>
+                   Language : 
+                  
+                   </label>   
+            <input 
+            type="text"
+            value={variable.language}
+            onChange={event => setVariable({...variable, language : event.target.value})}
+            ></input>
             <label>
                    Interests : 
                   
@@ -280,7 +286,7 @@ window.print();
                         onChange={event => setVariable({...variable, collegeEducationMarks : event.target.value})}
                         ></input>
                      <label>
-                       Certificate / Diploma :
+                       Certificate :
                    </label>
                    <p className="p-alert"> (If Any * )</p>
                    <input 
@@ -295,7 +301,21 @@ window.print();
                         placeholder="Enter certficate details here"
                         onChange={event => setVariable({...variable , certificates : event.target.value})}
                         ></input>
-                       
+                        <label>   Diploma :
+                   </label>
+                   <p className="p-alert"> (If Any * )</p>
+                   <input 
+                         type="text"
+                        value={variable.diplomaName}
+                        placeholder="Enter Here Diploma Name and Duration"
+                        onChange={event => setVariable({...variable ,diplomaName : event.target.value})}
+                        ></input>
+                   <input 
+                         type="text"
+                        value={variable.diploma}
+                        placeholder="Enter Diploma details here"
+                        onChange={event => setVariable({...variable , diploma : event.target.value})}
+                        ></input>
          
 
            
@@ -319,17 +339,16 @@ window.print();
         <div  className="col-lg-6 col-md-12 col-cm-12 col-preview printme">
             <div className="preview" id="toprint">
              
-             <div className="preview-heading-2"
+             <div className="preview-heading-6"
          >
            <h1>
            {variable.firstName} {variable.lastName} 
            </h1> 
-           <span>  <img src={file}  className="img2" alt="" /></span>
-          
+         
           <br/>
           <h3  className="preview-h3">
              {variable.profession}</h3> 
-            <br/><hr/>
+            <br/>
         
          </div>
          
@@ -338,7 +357,7 @@ window.print();
 
             <div className="preview-body ">
                 {/* Personal Information Column  with width = 20% */}
-                <div id="personalInfo2">
+                <div id="personalInfo">
                 <h3 className="preview-h3">Personal Information </h3><br/>
                 <h3 className="preview-h3">Email:</h3> 
                     < span> <p className="PERSONAL-P">{variable.email} </p></span>
@@ -377,7 +396,10 @@ window.print();
 
             </ul>
                 <br/>
-              
+                <h3 className="preview-h3">
+                Language :</h3> 
+
+                <p > {variable.language}</p>
 
 
 
@@ -391,7 +413,7 @@ window.print();
 
 
 
-                <div  id="professionalInfo2">
+                <div  id="professionalInfo">
 
 {/* Experience Details Here */}
                 <h3 className="preview-h3">
@@ -437,7 +459,10 @@ window.print();
              {variable.certificatesName} </h3> 
             <span> <p className="PERSONAL-P">{variable.certificates} </p></span>
             <br/>
-           
+            <h3 className="preview-h3"> 
+             {variable.diplomaName} </h3> 
+            <span> <p className="PERSONAL-P">{variable.diploma} </p></span>
+            
             <h3 className="preview-h3">
 
             Interests : </h3> 

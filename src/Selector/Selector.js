@@ -10,6 +10,18 @@ export default function Selector(){
       <p className="selector-p">" We have some of the best single page resume Templates "</p>
     </div>
             <div className="row">
+            <div className="col-lg-6 col-md-6 col-sm-12 col-xsm-12">
+                <Link
+              to='/template6'
+             
+             
+            >
+              <img
+              className="image-selector"
+              src="./images/template5.png" alt=""></img> 
+            </Link>
+                    
+                </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xsm-12">
                 <Link
               to='/template4'

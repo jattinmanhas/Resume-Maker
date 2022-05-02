@@ -31,7 +31,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
+      <nav className='navbar no-print'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           RESUME
           <i class='fab fa-firstdraft' />

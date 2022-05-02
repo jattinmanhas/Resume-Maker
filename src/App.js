@@ -5,7 +5,7 @@ import Navbar from "./Navbar/Navbar";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Signup from "./SignUp/Signup";
 import Auth from "./SignUp/auth";
-import { useUserContext } from "./context/userContext";
+import { useUserContext } from "../src/context/userContext";
 import Footer from "./Footer/Footer";
 import Carousel from "./Carousel/Carousel";
 import Action from "./Action/Action";
@@ -18,6 +18,7 @@ import Template3 from "./Templates/Template3/Template3";
 import Selector from "./Selector/Selector";
 import Template4 from "./Templates/Template4/Template4";
 import Template5 from "./Templates/Template5/Template5";
+import Template6 from "./Templates/Template6/Template6";
 
 function App() {
   const { user, loading, error } = useUserContext();
@@ -162,6 +163,21 @@ function App() {
 
 
               </>
+              
+            }
+          ></Route>
+                    <Route
+            path="/template6"
+            element={
+              <>
+
+                <Navbar />
+                < Template6 />
+                <Footer />
+
+
+              </>
+              
             }
           ></Route>
 

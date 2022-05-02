@@ -1,7 +1,11 @@
 import React from "react";
 import "./Home.css";
+import {Link} from 'react-router-dom';
+import { useUserContext } from "../context/userContext";
 
 function Home() {
+  const { user } = useUserContext();
+
   return (
     <div className="home__container">
       <div className="home__text-container">
@@ -15,7 +19,10 @@ function Home() {
           do it all on your own. With Resume Builder, it's quick, pain free, and
           effective.
         </p>
+        <Link to={user ? "resume": "sign-up"} >
         <button className="home__button">CREATE YOUR RESUME NOW</button>
+        </Link>
+        
       </div>
       <div className="home__image-container">
         <img className="home__mainImg" src="./images/resume-builder.png"></img>
