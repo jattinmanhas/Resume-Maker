@@ -8,92 +8,161 @@ export default function SinglePost3() {
       <div className="singlePostWrapper">
         <img
           className="singlePostImg"
-          src="https://sarkariyojana.com/wp-content/uploads/2020/08/agriculture-infrastructure-fund.jpg"
+          src="https://images.pexels.com/photos/4226115/pexels-photo-4226115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
         />
-        <h1 className="singlePostTitle">PM Kisan Maan Dhan Yojana</h1>
+        <h1 className="singlePostTitle">101+ Essential Skills to Put on a Resume [In 2022]</h1>
         <div className="singlePostInfo">
           <span>
             Author:
-            <b className="singlePostAuthor">Government of India</b>
+            <b className="singlePostAuthor">Ashish</b>
           </span>
-          <span>1 year ago</span>
+          <span>1 Jan 2022</span>
         </div>
         <div className="singlePost__container">
           <p className="singlePostDesc">
-            Government has launched the Pradhan Mantri Kisan Maan DhanYojana
-            (PM-KMY) on 12.9.2019 with a view to provide social security to
-            Small and Marginal Farmers in their old age when they have no means
-            of livelihood and minimal or no savings to take care of their
-            expenses.
+          Listing skills on your resume is fairly easy. 
+
+Listing the right skills in the right way is a little bit trickier.  
+<br/>
+
+Are you mentioning the right skills for the job, or are you boring the HR manager with irrelevant information? 
+<br/>
+Here’s a hint: the hiring manager for the Software Development team couldn’t care less about your expertise in Marketing.
+<br/>
+What they’re dying to know, though, is your skill level in Python.
+<br/>
+In this guide, we’re going to walk you through the process of putting skills on your resume. We’ll explain how to identify the right skills, and how, exactly, to list them.
+<br/>
+
           </p>
 
           <img
             className="singlepostDesc_img"
-            src="https://www.dairytoday.in/wp-content/uploads/2019/08/PM-KMY-2.jpg"
+            src="https://cdn-blog.novoresume.com/articles/most-important-skills-to-put-on-your-resume/skills-to-put-on-resume.png"
             alt=""
           />
-          <h2 className="singlepostDesc_heading">Benefits</h2>
-          <p className="singlePostDesc_cont">
-            Under this scheme, a minimum fixed pension of Rs.3,000/- is provided
-            to the small and marginal farmers, subject to certain exclusion
-            criteria, on attaining the age of 60 years. It is a voluntary and
-            contributory pension scheme. The eligible farmer is required to
-            contribute to a Pension Fund between Rs.55 to Rs.200 per month
-            depending on the entry age. The Central Government also contributes
-            in equal amount to the Pension Fund.
-          </p>
-          <h2 className="singlepostDesc_heading">Eligibility</h2>
+    
+          <h2 className="singlepostDesc_heading">Among others, you will learn: </h2>
           <p className="singlePostDesc_cont">
             <p>
+              <br/>
               <li className="padding_space">
-                Small and Marginal Farmer (SMF) - a farmer who owns cultivable
-                land upto 2 hectare as per land records of the concerned
-                State/UT.
+              How and why should you list your skills on a resume?
               </li>
-              <li className="padding_space">Age of 18- 40 years</li>
-            </p>
+              <li className="padding_space">What are hard skills, soft skills, and what is the difference?
+              </li>
+            
+              <li className="padding_space">
+          How can you list skills on your resume to help you stand out?
+          </li>
+            <li className="padding_space">
+            What are the top 120+ skills to put on a resume? For 10+ fields!
+            </li>
+            
+          </p>
           </p>
 
-          <h4 className="singlepostDesc_smHeading">
-            Farmers who are not eligible for the scheme
-          </h4>
-          <p className="singlePostDesc_cont" style={{ marginBottom: "5rem" }}>
-            The following categories of farmers have been brought under the
-            exclusion criteria:
+          <h2 className="singlepostDesc_heading">Hard Skills vs Soft Skills - What's the Difference ? </h2>
+          <p className="singlePostDesc_cont">
+            <p>
+            Hard skills refer to the technical knowledge or training you have gotten 
+            through experience. They are specific and essential to each job and are used
+             for completing your tasks.
+
+              <br/>
+              <img
+              className="singlepostDesc_img"
+              src="https://cdn-blog.novoresume.com/articles/most-important-skills-to-put-on-your-resume/hard-skills.png" alt=""></img>
+              <br/>
+              <b>Hard Skills Include (& Examples):
+
+</b>
+<br/>
+
+         <li className="padding_space">
+           <b>Machinery skills -</b>
+         operating a road roller, operating a PoS, pallet-stacker, forklift, etc
+              </li>
+              <li className="padding_space">
+              <b>Software skills -</b>
+              Adobe Creative Suite, Ableton Live Suite
+              </li>
+            
+              <li className="padding_space">
+              <b>Tools - </b>
+              SEM Marketing, Stethoscope, Google Analytics, Google Search Console, ERP systems, CRMs
+
+          </li>
             <li className="padding_space">
-              SMFs covered under any other statuary social security schemes such
-              as National Pension Scheme (NPS), Employees’ State Insurance
-              Corporation scheme, Employees’ Fund Organization Scheme etc.
+            <b>Languages -</b>
+            French, Spanish
             </li>
             <li className="padding_space">
-              Farmers who have opted for Pradhan Mantri Shram Yogi Maan Dhan
-              Yojana (PM-SYM) administered by the Ministry of Labour &
-              Employment
+            <b>Languages -</b>
+            French, Spanish
             </li>
             <li className="padding_space">
-              Farmers who have opted for Pradhan Mantri Laghu Vyapari Maan-dhan
-              Yojana (PM-LVM) administered by the Ministry of Labour &
-              Employment
+            <b>Coding Languages - </b>
+            Python, C++, C#, Java, Scala, R
             </li>
             <li className="padding_space">
-              All Institutional Land holders; and Former and present holders of
-              constitutional posts Former and present Ministers/ State Ministers
-              and former/present Members of Lok Sabha/ Rajya Sabha/ State
-              Legislative Assemblies/ State Legislative Councils,former and
-              present Mayors of Municipal Corporations, former and present
-              Chairpersons of District Panchayats. All serving or retired
-              officers and employees of Central/ State Government Ministries/
-              Offices/Departments and theirfield units,Central or State PSEs and
-              Attached offices/ Autonomous Institutions under Government as well
-              as regular employees of the Local Bodies (Excluding Multi Tasking
-              Staff / Class IV/Group D employees) All Persons who paid Income
-              Tax in last assessment year. Professionals like Doctors,
-              Engineers, Lawyers, Chartered Accountants, and Architects
-              registered with Professional bodies and carrying out profession by
-              undertaking practice.
+            <b>Techniques -</b>
+            Frequency analysis, Crystallization 
             </li>
+            
           </p>
+          </p>
+
+          <h2 className="singlepostDesc_heading">
+          Soft Skills  </h2>
+          <p className="singlePostDesc_cont">
+            <p>
+            Soft skills, on the other hand, are attributes and habits that describe
+             how you work individually or with others. They are not specific to a job,
+             but indirectly help you adapt to the work environment and company culture. 
+              <br/>
+           
+              <b>Some of the most in-demand soft skills are:
+
+</b>
+<br/>
+
+         <li className="padding_space">
+         Effective communication
+              </li>
+              <li className="padding_space">
+              Teamwork
+              </li>
+            
+              <li className="padding_space">
+              Responsibility
+          </li>
+            <li className="padding_space">
+            Creativity
+            </li>
+            <li className="padding_space">
+            Problem-solving
+            </li>
+            <li className="padding_space">
+            Leadership
+
+            </li>
+            <li className="padding_space">
+            Extroversion
+            </li>
+            <li className="padding_space">
+            People skills
+            </li>
+            <li className="padding_space">
+            Openness
+
+            </li>
+            
+          </p>
+          </p>
+
+
         </div>
       </div>
       {/* <Footer /> */}

@@ -26,9 +26,10 @@ import SinglePost3 from './Blog/SinglePost/SinglePost3';
 import SinglePost4 from './Blog/SinglePost/SinglePost4';
 import SinglePost5 from './Blog/SinglePost/SinglePost5';
 import SinglePost6 from './Blog/SinglePost/SinglePost6';
-import SinglePost7 from './Blog/SinglePost/SinglePost7';
-import SinglePost8 from './Blog/SinglePost/SinglePost8';
+// import SinglePost7 from './Blog/SinglePost/SinglePost7';
+// import SinglePost8 from './Blog/SinglePost/SinglePost8';
 import Queries from "./Queries/Contact"
+import Signin from "./SignUp/Signin";
 
 function App() {
   const { user, loading, error } = useUserContext();
@@ -137,8 +138,8 @@ function App() {
          
           </>
         }>
-          </Route>
-        <Route path="/singlepage7"
+           </Route>
+      {/*<Route path="/singlepage7"
         element={
           <>
           <Navbar/>
@@ -154,7 +155,7 @@ function App() {
           <SinglePost8 />
           </>
         }>
-          </Route>
+          </Route> */}
 
           <Route
             path="/about-us"
@@ -175,7 +176,8 @@ function App() {
               <>
 
                 <Navbar />
-                < Selector />
+                {/* < Selector /> */}
+                {user ? <Selector/> : <Navigate to={"/sign-up"}/>}
                 <Footer />
 
 

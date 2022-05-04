@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./SinglePost.css";
 import Footer from "../../Footer/Footer";
 import React from "react";
@@ -9,59 +9,97 @@ export default function SinglePost5() {
                <div className="singlePostWrapper">
                     <img
                          className="singlePostImg"
-                         src="https://enterslice.com/learning/wp-content/uploads/2019/02/Pradhan-Mantri-Kisan-Samman-Nidhi-Scheme.jpg"
+                         src="https://images.pexels.com/photos/5915139/pexels-photo-5915139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                          alt=""
                     />
                     <h1 className="singlePostTitle">
-                         Pradhan Mantri Kisan Samman Nidhi
+                    How to Accept a Job Offer in 2022 [Free Email Template]
                     </h1>
                     <div className="singlePostInfo">
                          <span>
                               Author:
                               <b className="singlePostAuthor">
-                                   Government of India
+                                   Ashish
                               </b>
                          </span>
-                         <span>2 years ago</span>
+                         <span>28 March 2022</span>
                     </div>
                     <div className="singlePost__container">
                          <p className="singlePostDesc">
-                              Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a new Central Sector Scheme to provide income support to all landholding farmers' families in the country to supplement their financial needs for procuring various inputs related to agriculture and allied activities as well as domestic needs.
+                         You just got offered a job and you’re super excited to just accept it and get started already…
+
+                         <br/>Understandable, but step back for a second. 
+                              <br/>
+                              Just like with everything, there is a right and wrong way to accept a job offer and we can bet you want to be on the right side of things with this one. 
+
+                         After all, everyone wants to make a good impression when they start a new job and this is definitely part of it. 
+                         <br/><br/>
+                         But what is the right way to accept a job offer in 2022? 
+                         <br/><br/>
+                         Well, we’re about to show you just that! Read on for a full guide on how to accept job offers and a job offer acceptance letter example to inspire you to write yours! 
+                         <br/>
                          </p>
 
-                         <img className="singlepostDesc_img" src="https://www.insightsonindia.com/wp-content/uploads/2020/02/Pradhan_mantri_kisan_samman.png" alt="" />
-                         <h2 className="singlepostDesc_heading">Eligibility</h2>
-                         <p className="singlePostDesc_cont">All land holding eligible farmer families (subject to the prevalent exclusion criteria) are to avail of the benefits under this scheme.
-<br /><br />
-                              The following categories of beneficiaries of higher economic status shall not be eligible for benefit under the scheme.
-                              <li style={{ marginTop: '1rem' }} className="padding_space">All Institutional Land holders.
+                          <h2 className="singlepostDesc_heading">How to Accept a Job Offer - 2 Simple Steps</h2>
+                         <p className="singlePostDesc_cont">The first thing to know is that there are two important steps to accepting a job offer, namely:
+                              <li style={{ marginTop: '1rem' }} className="padding_space">
+                              Evaluating the job offe
                               </li>
-                              <li className="padding_space">Farmer families in which one or more of its members belong to following categories
-                                   Former and present holders of constitutional posts
-                                   Former and present Ministers/ State Ministers and former/present Members of LokSabha/ RajyaSabha/ State Legislative Assemblies/ State Legislative Councils,former and present Mayors of Municipal Corporations, former and present Chairpersons of District Panchayats.
-                                   All serving or retired officers and employees of Central/ State Government Ministries /Offices/Departments and its field units Central or State PSEs and Attached offices /Autonomous Institutions under Government as well as regular employees of the Local Bodies (Excluding Multi Tasking Staff /Class IV/Group D employees)
-                                   All superannuated/retired pensioners whose monthly pension is Rs.10,000/-or more (Excluding Multi Tasking Staff / Class IV/Group D employees) of above category
-                                   All Persons who paid Income Tax in last assessment year
-                                   Professionals like Doctors, Engineers, Lawyers, Chartered Accountants, and Architects registered with Professional bodies and carrying out profession by undertaking practices.
-                              </li>
+                              <li className="padding_space">
+                                   Sending a job offer acceptance letter or email
+                                </li>
+                                Below, we will cover each step in detail, starting with: 
+                                <br/>
 
                          </p>
-                         <h2 className="singlepostDesc_heading">Benefits</h2>
+                         <h2 className="singlepostDesc_heading">1. Evaluate the Job Offer s</h2>
                          <p className="singlePostDesc_cont">
-                              Under the PM-KISAN scheme, all landholding farmers' families shall be provided the financial benefit of Rs. 6000 per annum per family payable in three equal installments of Rs. 2000 each, every four months.
+                         A job offer might seem very lucrative at a glance, but that doesn’t mean you should just accept it without a second glance.
+                         <br/><br/>
+                         One thing to consider is whether the official offer aligns with your expectations. Are the benefits, training hours, or salary discussed during the job interview the same as what you’re being offered now? 
+                         <br/><br/>
+                         For example, you might have discussed the option to work from home during the interview but now the job offer states that you have to be physically present at the office three days a week. 
+                         <br/><br/>
+                         If you don’t review the job offer in detail, you might miss it—although it’s definitely something you’d want to bring up with the hiring manager (especially if you’re set on working from home).
+                         <br/><br/>
+                         Here are some important steps that will help you properly evaluate a job offer: 
+                         <br/><br/>
+                         Get the job offer in writing. If the employer makes the official offer through a phone call, you should ask them to also send it in written form. This way, you can review all the terms and conditions carefully and negotiate any terms expressed in the offer more effectively. 
+                         <br/><br/>
+                         Ask for time to think the offer through. Instead of making a rushed decision just so that you don’t lose your spot at the company, ask for some time to think the offer through. Most employers will grant you 1 or 2 days to decide, so if you let them know you’re still interested but need some time to think about the terms, they probably won’t mind.
+                         <br/><br/>
+                         Be ready to negotiate. There is nothing wrong with negotiating some of the terms of your employment. Just keep your negotiation points realistic - chances are, the company isn’t willing to pay you twice more than what they initially offered (but 10-20% more might be OK).
+                         <br/>
                          </p>
                
-                         <h2 className="singlepostDesc_heading">How to apply</h2>
+                         <h2 className="singlepostDesc_heading">#2. Write a Job Offer Acceptance Letter or Email</h2>
 
                          <p className="singlePostDesc_cont" style={{ marginBottom: '5rem' }}>
-                              <li style={{ marginTop: '1rem' }} className="padding_space">The eligible farmers may apply with the village Patwaris, revenue officials or other designated officers / agencies and submit their required details to them.
-                              </li>
-                              <li className="padding_space">Farmers can also visit their nearest Common Service Centres (CSCs) for registration in the Scheme upon payment of fees.
+                         It goes without saying that your acceptance letter should be well-structured, error-free, and formal. Also, it’s better to type it out to make sure it’s easily readable. 
+                         <br/>
+                         You can use an acceptance letter if the employer also sent you the job offer via letter as opposed to an email, or if the company is in a more traditional and less tech-savvy industry.
+                         <br/>
+                         Here are all the steps to writing a great job offer acceptance letter: 
+                         <br/>
+                              <li style={{ marginTop: '1rem' }} className="padding_space">
+                              <b>Thank the employer.  </b>Start off the acceptance letter by thanking the employer for the offer. The best way to do it is by mentioning the position and the company’s name (e.g. “Thank you for formally offering me the [job title] position at [company X]”).  
 
                               </li>
-                              <li className="padding_space">Farmers can also do their self-registration through the Farmers Corner in the PM KISAN portal.
+                              <li className="padding_space">
+                                   <b>Accept the job offer </b>. Afterward, you can accept the job offer officially and, optionally, mention you’re looking forward to getting started (e.g. “I am delighted to officially accept your job offer and become part of the team”). 
+
                               </li>
-                              <li className="padding_space">Details required for registration include  Name, Age, Gender, Category(SC/ST), Aadhaar Number (in case Aadhaar Number has not been issued then Aadhaar Enrollment Number together with any other prescribed documents for purposes of the identification such as Driving Licence, Voters’ ID Card, NREGA Job Card, or any other identification documents issued by Central/State/UT Governments or their authorities,etc.), Bank Account Number and the Mobile Number of the beneficiaries.
+                              <li className="padding_space">
+                              <b> Clarify any remaining points in the offer.</b> If you’ve already received all the details about the agreed salary, benefits, and such in written form, you can use the space to officially agree with the terms. If you first received an offer and then negotiated some of the terms via, say, phone, you can use the acceptance letter to document them in writing (e.g. “As we agreed, my starting salary is [$X] with [benefits] as part of the offer”).  
+
+                              </li>
+                              <li className="padding_space">
+                              <b>State your starting date.</b> To avoid any misunderstandings, re-confirm your starting date in the acceptance letter (e.g. “I am confirming my start date will be on May 20”). Keep in mind that if you’re changing jobs and are required to serve out a notice period, it’s better to inform your future employer in advance, instead of mentioning it in the letter.
+
+                              </li>
+                              <li className="padding_space">
+                             <b>Conclude on a positive note</b> . For example, “I am looking forward to starting my new role.” 
+
                               </li>
 
                          </p>

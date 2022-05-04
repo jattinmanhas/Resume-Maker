@@ -12,8 +12,8 @@ function Sidebar() {
                          alt=""
                     />
                     <p>
-                         We are some hardworking people who are making this practice blog. We aim for making our customer experience best. I hope you would help us to make this website better.
-                    </p>
+                    Hope You all appreciate our work on these blog post and we will be gload if they  are helping you making a better Resume .
+                           </p>
                </div>
                
                <div className="sidebarItem">

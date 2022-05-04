@@ -33,15 +33,14 @@ export default function Template2(){
         certificatesName:''
 
     })
+    // creating use state for image file
     const [file, setFile] = useState();
     function handleChange(e) {
         console.log(e.target.files);
         setFile(URL.createObjectURL(e.target.files[0]));
     }
-
-function print(){
-
-
+// Method to print as pdf
+function print2(){
 window.print();
 }
   
@@ -305,7 +304,7 @@ window.print();
             type="button"
             value="Print Resume as Pdf"
             className="btn-input"
-            onClick={print}
+            onClick={print2}
             ></input>
             </form> 
           
@@ -337,8 +336,9 @@ window.print();
            
 
             <div className="preview-body ">
+
                 {/* Personal Information Column  with width = 20% */}
-                <div id="personalInfo2">
+                <div id="personalInfo-2">
                 <h3 className="preview-h3">Personal Information </h3><br/>
                 <h3 className="preview-h3">Email:</h3> 
                     < span> <p className="PERSONAL-P">{variable.email} </p></span>

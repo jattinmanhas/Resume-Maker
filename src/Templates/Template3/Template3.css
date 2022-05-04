@@ -28,6 +28,19 @@ input{
     color:white;
    
 }
+.software-input{
+    width:auto; 
+    margin: 4px;
+    margin-left: 8%;
+}
+.img2{
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-radius: 80px 80px;
+    object-fit: cover;
+}
+
 /* input[type="text"] {
    
 width:100%;
@@ -37,19 +50,55 @@ width:100%;
 
 
 /* column preview template */
+h3{
+    font-size: 14px;
+}
+p{
+    font-size: 14px;
+    font-weight: 450;
+    color:black;
+}
+.p-alert{
+    color:red;
+    font-weight: light;
+}
+
+
+
+h1{
+    margin-left: 0;
+    padding-left: 0;
+    text-transform:capitalize;
+}
 h1,h3,p{
     display: inline-block;
     padding: 5px 10px;
 }
+.bold-6{
+    color: #000;
+    text-transform:capitalize;
+}
+
+
+
+.software-li{
+list-style-type: none;
+text-transform: capitalize;
+font-weight: bold;
+}
+.row-software{
+    margin:1px;
+}
 .img{
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     float: right;
     border-radius: 100px 100px;
     object-fit: cover;
 }
 .instituteName{
     display:block;
+    text-transform:capitalize;
 }
 
 .col-preview{
@@ -62,18 +111,66 @@ h1,h3,p{
     padding: 2px;
 }
 .preview-heading-3{
-    background-color: rgb(84, 243, 179);
-    color:white;
-    margin:0 0 1rem;
+    color:#112B3C;
+    background-color:white;
+    margin:0 0;
     padding:2% 5%;
 }
 .preview-body{
     background-color: white;
-    padding: 2% 5%;
+    padding: 0%;
     text-align: left;
+    display:table;
+    clear: both;
 }
+/* div{
+    float:left;
+} */
+#personalInfo3 {
+
+width:35%;
+margin:0;
+border-left: 0.5px solid black;
+background-color: white;
+float:right;
+height:800px;
+}
+
+.skill{
+    color:rgb(29, 29, 32);
+    font-size: 14px;
+    word-spacing: 12px;
+    text-transform:capitalize;
+
+}
+.software{
+    word-spacing: 12px;
+    font-weight:500;
+    text-transform:capitalize;
+}
+#professionalInfo3 {
+   
+   float:left;
+    width:63%;
+margin:0;
+   
+    }
+
 .preview-h3{
     display: block;
+    margin:1px;
+    padding:2px;
+    line-height:1rem;
+    text-transform:capitalize;
+    font-weight: bold;
+    max-width: fit-content;
+}
+.preview-title-h3{
+       
+    display: block;
+    font-weight: bold;
+    color:navy;
+    text-transform:capitalize;
 }
 
 @media print { 
@@ -84,15 +181,30 @@ h1,h3,p{
     form{
         display:none;
     }
-    
     h1{
-        font-size:16pt;
+        font-size:18pt;
+        font-weight:bold;
+    }
+    h3{
+        font-size: 14pt;
+        display:inline;
+    }
+    p{
+        font-size: 12pt;
+        font-weight: 450;
     }
     h1,h3,p{
         display: inline-block;
-        padding: 3pt 8t;
-        font-size:14pt;
+        padding: 5pt 10pt;
     }
+    .img{
+        width: 100pt;
+        height: 100pt;
+        float: right;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+   
     .col-preview{
     
         padding:10pt 5pt;
@@ -104,21 +216,48 @@ h1,h3,p{
         padding: 1pt;
     }
     .preview-heading-3{
-        background-color:  rgb(84, 243, 179);
-        color:white;
-        margin:0 0 16pt;
-        padding:20pt 50pt;
+        background-color:white;
+        color:#112B3C;
+        margin:0 0;
+        padding:15pt 30pt;
     }
     .preview-body{
         background-color: white;
-        padding: 15pt 50pt;
+        padding: 0pt;
         text-align: left;
-    }.skill{
-        color:rgb(86, 86, 214);
-        word-spacing: 40pt;
+    }
+    /* #personalInfo3 {
+
+        width:45%;
+        margin:0;
+        background-color: rgba(239, 235, 235, 0.849);
+        float:left;
+        height:800pt;
+        }
+     #professionalInfo3 {
+           
+           
+        width:55%;
+        margin:0;
+           float: right;
+           height: 800pt;
+           
+         } */
+    .skill{
+        color:rgb(24, 24, 234);
+        font-size: 14pt;
+        word-spacing: 12pt;
 
     }
     .preview-h3{
         display: block;
+       
     }
+    .preview-title-h3{
+       
+            display: block;
+            font-weight: bold;
+            color:navy;
+        }
+    
 }

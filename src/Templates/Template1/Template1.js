@@ -8,16 +8,36 @@ export default function Template1(){
         lastName:'',
         email:'',
         mobile:'',
-        profession:'',
-        skills:'',
+        // profession:'',
+        // professiondetails:'',
+        interests:'',
+        skill1:'',
+        skill2:'',
+        skill3:'',
+        skill4:'',
+        skill5:'',
+        skill6:'',
+        skill7:'',
+        skill8:'',
+        software1:'',
+        software2:'',
+        software3:'',
+        software4:'',
+        software5:'',
+        software6:'',
         address:'',
         higherEducation:'12th Medical/ 12th Non.Medical/12th Arts',
         school:'',
         higherEducationMarks:'',
-        collegeEducation:' ',
+        collegeEducation:'B.A./B.Sc./B.E./...   ',
         college:'',
         collegeEducationMarks:'',
-        experience:''
+        expTitle:'',
+        experience:'',
+        expTitle1:'',
+        experience1:'',
+        certificatesName:'',
+        certificates:''
 
     })
     const [file, setFile] = useState();
@@ -42,12 +62,12 @@ window.print();
           
            <form>
            <input type="file" onChange={handleChange} />
-                <label for="firstName">
+           <label for="firstName">
                 First Name :  </label> 
                   
                    <input type="text"
             value={variable.firstName}
-            placeholder="Ashish"
+            placeholder="First Name"
             onChange={event => setVariable({...variable, firstName : event.target.value})}
             />
             
@@ -58,12 +78,28 @@ window.print();
                    
                    <input type="text"
             value={variable.lastName}
+            placeholder="Last Name"
             onChange={event => setVariable({...variable, lastName : event.target.value})}
             ></input>
        
                 
+            {/* <label>
+                   Profession  : 
+                  
+                   </label>   
+            <input 
+            type="text"
+            placeholder="Enter Profession Name"
+            value={variable.profession}
+            onChange={event => setVariable({...variable, profession : event.target.value})}
+            ></input>
+              <input 
+            type="text"
+            placeholder="Enter Profession Details"
+            value={variable.professiondetails}
+            onChange={event => setVariable({...variable, professiondetails : event.target.value})}
+            ></input> */}
 
-              
               <label>
                    Email  : 
                    </label> 
@@ -85,8 +121,6 @@ window.print();
             onChange={event => setVariable({...variable, mobile : event.target.value})}
             ></input>  
              
-
-            
            <label>
                    Address  : 
                   
@@ -96,6 +130,156 @@ window.print();
             value={variable.address}
             onChange={event => setVariable({...variable, address : event.target.value})}
             ></input>
+           
+           <label>
+                   Interests : 
+                  
+                   </label>   
+            <input 
+            type="text"
+            value={variable.interests}
+            onChange={event => setVariable({...variable, interests : event.target.value})}
+            ></input>
+            
+           <label>
+                   Experience  : 
+                  
+                   </label>   
+                   <input 
+            type="text"
+            value={variable.expTitle}
+            placeholder="Job Title / Project Title with year details also"
+            onChange={event => setVariable({...variable, expTitle : event.target.value})}
+            ></input>
+            <input 
+            type="text"
+            value={variable.experience}
+            placeholder="Job Details / Project Details"
+            onChange={event => setVariable({...variable, experience : event.target.value})}
+            ></input>
+                  <input 
+            type="text"
+            value={variable.expTitle1}
+            placeholder="Job Title / Project Title with Years Details also"
+            onChange={event => setVariable({...variable, expTitle1 : event.target.value})}
+            ></input>
+            <input 
+            type="text"
+            value={variable.experience1}
+            placeholder="Job Details / Project Details"
+            onChange={event => setVariable({...variable, experience1 : event.target.value})}
+            ></input>
+         
+         <label>
+                   Skills  : 
+                   <p className="p-alert"> (Enter skills Separately in Feilds *No Need to fill every feild* )</p>
+                   </label>   
+            <input 
+            className="skill-input"
+            type="text"
+            placeholder="Enter Your Skill"
+            value={variable.skill1}
+            onChange={event => setVariable({...variable, skill1 : event.target.value})}
+            ></input>
+                        <input
+                        className="skill-input" 
+            type="text"
+            value={variable.skill2}
+            placeholder="Enter Your Skill"
+            onChange={event => setVariable({...variable, skill2 : event.target.value})}
+            ></input>
+                        <input 
+                        className="skill-input"
+            type="text"
+            value={variable.skill3}
+            placeholder="Enter Your Skill"
+            onChange={event => setVariable({...variable, skill3 : event.target.value})}
+            ></input>
+                        <input 
+                        className="skill-input"
+            type="text"
+            value={variable.skill4}
+            placeholder="Enter Your Skill"
+            onChange={event => setVariable({...variable, skill4 : event.target.value})}
+            ></input>
+                        <input
+                        className="skill-input" 
+            type="text"
+            value={variable.skill5}
+            placeholder="Enter Your Skill"
+            onChange={event => setVariable({...variable, skill5 : event.target.value})}
+            ></input>
+                        <input 
+                        className="skill-input"
+            type="text"
+            placeholder="Enter Your Skill"
+            value={variable.skill6}
+            onChange={event => setVariable({...variable, skill6 : event.target.value})}
+            ></input>
+                        <input 
+                        className="skill-input"
+            type="text"
+            value={variable.skill7}
+            placeholder="Enter Your Skill"
+            onChange={event => setVariable({...variable, skill7 : event.target.value})}
+            ></input>
+                        <input 
+                        className="skill-input"
+            type="text"
+            value={variable.skill8}
+            placeholder="Enter Your Skill"
+            onChange={event => setVariable({...variable, skill8 : event.target.value})}
+            ></input>
+
+
+
+              <label>
+                   Software \ Interface : 
+                   <p className="p-alert"> (No need to fill every input* )</p>
+                   </label>   
+            <input 
+              className="software-input"
+            type="text"
+            placeholder="Enter Software interface"
+            value={variable.software1}
+            onChange={event => setVariable({...variable,software1 : event.target.value})}
+            ></input>
+            <input 
+            className="software-input"
+            type="text"
+            placeholder="Enter Software Interface"
+            value={variable.software2}
+            onChange={event => setVariable({...variable, software2 : event.target.value})}
+            ></input>
+                        <input
+                        className="software-input" 
+            type="text"
+            value={variable.software3}
+            placeholder="Enter Software Interface"
+            onChange={event => setVariable({...variable, software3 : event.target.value})}
+            ></input>
+                        <input 
+                        className="software-input"
+            type="text"
+            value={variable.software4}
+            placeholder="Enter Software Interface"
+            onChange={event => setVariable({...variable, software4 : event.target.value})}
+            ></input>
+                        <input 
+                        className="software-input"
+            type="text"
+            value={variable.software5}
+            placeholder="Enter software interface"
+            onChange={event => setVariable({...variable, software5 : event.target.value})}
+            ></input>
+                        <input
+                        className="software-input" 
+            type="text"
+            value={variable.software6}
+            placeholder="Enter Software Interface"
+            onChange={event => setVariable({...variable, software6 : event.target.value})}
+            ></input>
+            
            
             
            <label>
@@ -145,41 +329,25 @@ window.print();
                         onChange={event => setVariable({...variable, collegeEducationMarks : event.target.value})}
                         ></input>
          
-           
+                    <label>
+                       Certificate / Diploma :
+                   </label>
+                   <p className="p-alert"> (If Any * )</p>
+                   <input 
+                         type="text"
+                        value={variable.certificatesName}
+                        placeholder="Enter certficate name here"
+                        onChange={event => setVariable({...variable , certificatesName : event.target.value})}
+                        ></input>
+                   <input 
+                         type="text"
+                        value={variable.certificates}
+                        placeholder="Enter certficate details here"
+                        onChange={event => setVariable({...variable , certificates : event.target.value})}
+                        ></input>
 
-
-            <label>
-                   Profession  : 
-                  
-                   </label>   
-            <input 
-            type="text"
-            value={variable.profession}
-            onChange={event => setVariable({...variable, profession : event.target.value})}
-            ></input>
-           
-           <label>
-                   Skills  : 
-                  
-                   </label>   
-            <input 
-            type="text"
-            value={variable.skills}
-            onChange={event => setVariable({...variable, skills : event.target.value})}
-            ></input>
+         
        
-            
-           <label>
-                   Experience  : 
-                  
-                   </label>   
-            <input 
-            type="text"
-            value={variable.experience}
-            onChange={event => setVariable({...variable, experience : event.target.value})}
-            ></input>
-           
-
         
         <label> Thanks for using our Resume Builder</label>
             <input
@@ -200,67 +368,108 @@ window.print();
              <div className="preview-heading-1"
          
          >
-          <h3>Full Name : </h3> 
+             <div className="heading-40-left">
+             <h3>Full Name : </h3> 
           <span> <p>{variable.firstName} {variable.lastName}</p></span>
-          {/* <span>  <img src={file}  className="img" alt="" /></span> */}
+          
           <br/>
          <h3>Email - Id : </h3> 
          <span> <p>{variable.email} </p></span>
-         <br/>
-         <h3 >M. Number : </h3> 
-         <span> <p> {variable.mobile}</p></span>
-         <br/>
-         <hr/>
+             </div>
+             <div className="heading-40-right">
+             <h3 >M. Number : </h3> 
+             <span> <p> {variable.mobile}</p></span>
+             <h3 className="preview-h3">
+           
+              Address :  </h3> 
+             <span> <p> {variable.address}</p></span>
+           
+             </div>
+             <div className="heading-20-right">
+                  <span>  <img src={file}  className="img-1" alt="" /></span>
+                  </div>
+        
+         
+        
+         
         
          </div>
          
                   
            
 
-            <div className="preview-body ">
+            <div className="preview-body-1 ">
+
+            <hr/>
+            <h3 className="preview-h3">
+         
+         Experience(Project/Job details): </h3> 
+         <h3 className="preview-title-h3">{variable.expTitle} </h3>
+     <span> <p>{variable.experience} </p></span>
+     <br/>
+     <h3 className="preview-title-h3">{variable.expTitle1} </h3>
+     <span> <p>{variable.experience1} </p></span>
 
 
+     <h3 className="preview-h3">
+   
+         Skills </h3> 
+     
+     <ul className="row-4">
+         <li className="skill-li-4"> {variable.skill1} </li>
+         <li className="skill-li-4"> {variable.skill2} </li>
+         <li className="skill-li-4"> {variable.skill3} </li>
+         <li className="skill-li-4"> {variable.skill4} </li>
+         <li className="skill-li-4"> {variable.skill5} </li>
+         <li className="skill-li-4"> {variable.skill6} </li>
+         <li className="skill-li-4"> {variable.skill7} </li>
+         <li className="skill-li-4"> {variable.skill8} </li>
+
+     </ul>
+    
+         <br/>
+         <h3 className="preview-h3">
+         Software </h3> 
+         <ul className="row-software4">
+         <li className="software-li4"> {variable.software1} </li>
+         <li className="software-li4"> {variable.software2} </li>
+         <li className="software-li4"> {variable.software3} </li>
+         <li className="software-li4"> {variable.software4} </li>
+         <li className="software-li4"> {variable.software5} </li>
+         <li className="software-li4"> {variable.software6} </li>
          
 
-            <h3 className="preview-h3">  
-             Eductaion Details : </h3> 
-          
+     </ul>
+         <br/>
+      
+  
 
-            <h3 className="preview-h3"> 
-            {variable.higherEducation} 
-             </h3>
-             <span> <p className="instituteName"> <b>{variable.school}</b> </p></span>
+     <h3 className="preview-h3"> Eductaion Details : </h3> 
+    
 
-            <span> <p > <b>Percentage :-</b>{variable.higherEducationMarks}</p></span>
+     <h3 className="preview-h3"> 
+     {variable.higherEducation} 
+      </h3>
+      <span> <p clasName="instituteName"> <b>{variable.school}</b> </p></span>
 
-            <h3 className="preview-h3"> 
-             {variable.collegeEducation} </h3> 
-              <p  clasName="instituteName"> <b>{variable.college}</b> </p>
-            <span> <p>  <b>Percentage :-</b> {variable.collegeEducationMarks} </p></span>
+     <span> <p  > <b>Percentage :-</b>{variable.higherEducationMarks}</p></span>
 
+     <h3 className="preview-h3"> 
+      {variable.collegeEducation} </h3> 
+      <span> <p  clasName="instituteName"> <b>{variable.college}</b> </p></span>
+     <span> <p>  <b>Percentage :-</b> {variable.collegeEducationMarks} </p></span>
 
-            <h3 className="preview-h3">
+     
+     <br/>
+     <h3 className="preview-h3"> 
+      {variable.certificatesName} </h3> 
+     <span> <p className="PERSONAL-P">{variable.certificates} </p></span>
+     
+    
+
+   
+
            
-                Experience(Project/Job details): </h3> 
-            <span> <p>{variable.experience} </p></span>
-
-
-            <h3 className="preview-h3">
-            
-                Skills </h3> 
-            <span> <p className="skill"> {variable.skills}</p></span>
-
-
-            <h3 className="preview-h3">
-            
-                Profession </h3> 
-            <span> <p > {variable.profession}</p></span>
-
-            <h3 className="preview-h3">
-           
-                Address :  </h3> 
-            <span> <p> {variable.address}</p></span>
-
 
             </div>
             

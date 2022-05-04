@@ -17,28 +17,28 @@ function Posts() {
 
       <Link to="/singlepage2" style={{ textDecoration: "none" }}>
         <Post
-          src="https://sarkariyojana.com/wp-content/uploads/2020/08/agriculture-infrastructure-fund.jpg"
-          postTitle="Agriculture Infrastructure Fund"
-          postDate="1 October 2021"
-          postDesc="The Union Cabinet in July 2020 has approved a new pan India Central Sector Scheme called Agriculture Infrastructure Fund. The scheme shall provide a medium - long term debt financing facility for investment in viable projects for post-harvest management Infrastructure and community farming assets through interest subvention and financial support."
+          src="https://cdn-images.zety.com/pages/resume_job_description_zety_us_1.jpg?fit=crop&h=260&dpr=2"
+          postTitle="How to Write an Effective Resume Job Description + Examples"
+          postDate="1 March 2022"
+          postDesc="When it comes to a job application experience is king. Learn how to write a resume job description that’ll be your recruitment crowning glory."
         />
       </Link>
 
       <Link to="/singlepage3" style={{ textDecoration: "none" }}>
         <Post
-          src="https://www.kisaanhelpline.com/govt_scheme_image/15072121015621PM%20Kisan%20Maan%20Dhan%20Yojana.jpg.jpg"
-          postTitle="Pradhan Mantri Kisan Maan Dhan Yojana
+          src="https://images.pexels.com/photos/5668869/pexels-photo-5668869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          postTitle="101+ Essential Skills to Put on a Resume [In 2022]
 "
-          postDate="1 year ago"
-          postDesc="Government has launched the Pradhan Mantri Kisan Maan DhanYojana (PM-KMY) on 12.9.2019 with a view to provide social security to Small and Marginal Farmers in their old age when they have no means of livelihood and minimal or no savings to take care of their expenses.
+          postDate="1 Jan 2022"
+          postDesc="If your certifications are job-critical, it’s essential to include them on top of your resume in the summary or contact information section, or you risk the recruiter just skipping over your resume.
 "
         />
       </Link>
 
       <Link to="/singlepage4" style={{ textDecoration: "none" }}>
         <Post
-          src="https://financialtribune.com/sites/default/files/styles/telegram/public/field/image/17january/05-zs-h1_vegetable_oil_production_274-ab.jpg?itok=Vyaid8mY"
-          postTitle="National Mission on Edible Oils"
+          src="https://images.pexels.com/photos/4101343/pexels-photo-4101343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          postTitle="Why and How to List Certifications on a Resume – Guide w/ Examples"
           postDate="1 year ago"
           postDesc="National Mission on Edible Oils – Oil Palm (NMEO-OP) is a new Centrally Sponsored Scheme with a special focus on the North east region and the Andaman and Nicobar Islands with a focus on increasing area and productivity of oilseeds and Oil Palm."
         />
@@ -46,48 +46,30 @@ function Posts() {
 
       <Link to="/singlepage5" style={{ textDecoration: "none" }}>
         <Post
-          src="https://img.jagranjosh.com/imported/images/E/GK/PM-Kisan-Samman-Nidhi-Yojana%202020.jpg"
-          postTitle="Pradhan Mantri Kisan Samman Nidhi
+          src="https://images.pexels.com/photos/6205759/pexels-photo-6205759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          postTitle="How to Accept a Job Offer in 2022 [Free Email Template]
 "
-          postDate="2 years ago"
-          postDesc="Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a new Central Sector Scheme to provide income support to all landholding farmers' families in the country to supplement their financial needs for procuring various inputs related to agriculture and allied activities as well as domestic needs."
+          postDate="28 March 2022"
+          postDesc="You just got offered a job and you’re super excited to just accept it and get started already…
+
+          Understandable, but step back for a second. "
         />
       </Link>
 
       <Link to="/singlepage6" style={{ textDecoration: "none" }}>
         <Post
-          src="https://knnindia.co.in/uploads/newsfiles/DAIRYSECTOR-15-5-2020.jpg"
-          postTitle="Interest subvention for dairy sector
-"
-          postDate="2 years ago"
-          postDesc="To offset the economic impact of Covid-19 on Dairy Sector, Ministry of Fisheries, Animal Husbandry and Dairying has introduced a new scheme “Interest subvention on Working Capital Loans for Dairy sector” for Supporting Dairy Cooperatives and Farmer Producer Organizations engaged in dairy activities (SDC&FPO). The scheme will be implemented through National Dairy Development Board (NDDB), Anand
-"
-        />
-      </Link>
+          src="https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          postTitle="What to Wear to an Interview - For Both Men & Women
 
-      <Link to="/singlepage7" style={{ textDecoration: "none" }}>
-        <Post
-          src="https://www.dripworks.com/wordpress/wp-content/uploads/2020/05/top-four-irrigation-techniques-782x440.jpg"
-          postTitle="Drip Irrigation as the Most Efficient Irrigation System Type
 "
-          postDate="1 hour ago"
-          postDesc="Drip, or trickle irrigation, is the system in which water is frequently and slowly applied directly on the crop root zone. The concept of this irrigation system is to irrigate only the root zone instead of the entire field surface, thus making water content of the crop root zone at the optimum level.
+          postDate="22 April 2022"
+          postDesc="Choosing the right outfit, though, isn’t all that easy. There isn’t a one-size-fits-all formula on what to wear for YOUR job interview. 
 
 "
         />
       </Link>
 
-      <Link to="/singlepage8" style={{ textDecoration: "none" }}>
-        <Post
-          src="https://www.heritagelawnskc.com/wp-content/uploads/2016/05/Sprinkler-System-1-750x501.jpg"
-          postTitle="Simple Automatic Irrigation with Sprinkler System
-"
-          postDate="6 hours ago"
-          postDesc="The sprinkler irrigation system is a crop irrigation method similar to rainfall. The system distributes water over the field surface by spraying it into the air and allowing it to fall on the soil like, similar to that of rain.
-
-"
-        />
-      </Link>
+     
     </div>
   );
 }
