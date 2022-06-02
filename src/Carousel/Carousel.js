@@ -1,6 +1,7 @@
 import React from "react";
 import "./Carousel.css";
 import { Link } from "react-router-dom";
+import CarouselN from "./CarouselN";
 
 
 function Carousel() { 
@@ -55,8 +56,6 @@ function Carousel() {
       </div>
 
             </div>
-
-
         );
     }
 

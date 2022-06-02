@@ -1,0 +1,51 @@
+.design1__container{
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
+    .design1__firstContainer{
+        margin-left: 20px;
+        margin-right: 20px;
+
+        h6{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    .design1__secondContainer{
+        margin-left: 20px;
+        margin-right: 20px;
+        h6{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    .design1__thirdContainer{
+        margin-left: 20px;
+        margin-right: 20px;
+        h6{
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+}
+
+@media screen and (max-width: 968px){
+    .design1__container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+
+        .design1__firstContainer{
+            margin-bottom: 50px;
+        }
+        .design1__secondContainer{
+            margin-bottom: 50px;
+        }
+    }
+}

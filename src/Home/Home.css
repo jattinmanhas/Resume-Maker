@@ -6,12 +6,16 @@
     overflow-x: hidden;
 }
 
+.home__text-container{
+    margin-bottom: 4rem;
+}
+
 
 .home__text-container .home__heading{
     font-weight: 400;
     font-size: 40px;
-    line-height: 1.6;
     color: #212529;
+    font-weight: bold;
 }
 
 .home__text-container .home__heading span{
@@ -23,6 +27,12 @@
     margin-bottom: 16px;
     margin-top: 16px;
     color: #686D71;
+    display: inline-block;
+    padding-right: 4rem;
+}
+
+.home__text-container .home__text .home__paragraph{
+    display: none;
 }
 
 .home__image-container img{

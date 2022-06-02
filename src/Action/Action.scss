@@ -1,0 +1,153 @@
+.action__container{
+  width: 100%;
+  background-color: #0954b6;
+  color: white;
+  padding: 40px 20px;
+
+  hr{
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  h2{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+
+  .action__details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .action__firstContainer{
+    text-align: center;
+
+    .actionSvg__container{
+      height: 80px;
+      width: 80px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      left: 40%;
+      margin-bottom: 20px;
+      
+      svg{
+        display: block;
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+      }
+    }
+
+    .action__text{
+      color: white;
+      font-size: 13px;
+      margin:5px 20px;
+    }
+
+    h6{
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .action__secondContainer{
+    text-align: center;
+
+    .actionSvg__container{
+      height: 80px;
+      width: 80px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      left: 40%;
+      margin-bottom: 20px;
+      
+      svg{
+        display: block;
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+      }
+    }
+    .action__text{
+      color: white;
+      font-size: 13px;
+      margin:5px 20px;
+    }
+
+    h6{
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+
+  .action__thirdContainer{
+    text-align: center;
+
+    .actionSvg__container{
+      height: 80px;
+      width: 80px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      left: 40%;
+      margin-bottom: 20px;
+
+      img{
+        display: block;
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+      }
+    }
+    .action__text{
+      color: white;
+      font-size: 13px;
+      margin:5px 20px;
+    }
+
+    h6{
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 968px){
+  .action__container{
+    h2{
+      font-size: 20px;
+    }
+
+    .action__details{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .action__firstContainer{
+      margin-bottom: 2.5rem;
+    }
+    
+    .action__secondContainer{
+      margin-bottom: 2.5rem;
+    }
+  }
+}

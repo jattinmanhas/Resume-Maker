@@ -30,6 +30,7 @@ import SinglePost6 from './Blog/SinglePost/SinglePost6';
 // import SinglePost8 from './Blog/SinglePost/SinglePost8';
 import Queries from "./Queries/Contact"
 import Signin from "./SignUp/Signin";
+import Accordian from "./Accordian/Accordian";
 
 function App() {
   const { user, loading, error } = useUserContext();
@@ -44,8 +45,9 @@ function App() {
               <>
                 <Navbar />
                 <Home />
-                <Carousel />
+                {/* <Carousel /> */}
                 <Action />
+                <Accordian/>
                 <Footer />
               </>
             }
