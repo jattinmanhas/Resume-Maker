@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Auth from "./SignUp/auth";
 import { useUserContext } from "../src/context/userContext";
 import Footer from "./Footer/Footer";
-import Carousel from "./Carousel/Carousel";
 import Action from "./Action/Action";
 import ContactUs from "./ContactUs/ContactUs"
 import AboutUs from "./AboutUs/AboutUs";
@@ -31,6 +30,7 @@ import SinglePost6 from './Blog/SinglePost/SinglePost6';
 import Queries from "./Queries/Contact"
 import Signin from "./SignUp/Signin";
 import Accordian from "./Accordian/Accordian";
+import SwipeCarousel from "./Slider/Slider";
 
 function App() {
   const { user, loading, error } = useUserContext();
@@ -45,7 +45,7 @@ function App() {
               <>
                 <Navbar />
                 <Home />
-                {/* <Carousel /> */}
+                <SwipeCarousel/>
                 <Action />
                 <Accordian/>
                 <Footer />
