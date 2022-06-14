@@ -1,3 +1,8 @@
+$white: #fff;
+$google-blue: #4285f4;
+$button-active-blue: #1669F2;
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -146,7 +151,7 @@
   }
   
   .form-signup button {
-    background-color: teal;
+    background-color: rgb(81, 81, 255);
     border: none;
     color: white;
     padding: 12px;
@@ -155,6 +160,11 @@
     width: 100%;
     border-radius: 6px;
     font-size: 18px;
+  }
+
+  .form-signup button:hover{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.01);
   }
   
   .container1 {
@@ -202,6 +212,51 @@
     max-width: 400px;
     margin-bottom: 18px;
   }
+
+  .signup__header{
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .google-btn {
+    width: 60%;
+    margin: 0 auto;
+    height: 42px;
+    background-color: $google-blue;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+    .google-icon-wrapper {
+      position: absolute;
+      margin-top: 1px;
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: $white;
+    }
+    .google-icon {
+      position: absolute;
+      margin-top: 11px;
+      margin-left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+    .btn-text {
+      float: right;
+      margin: 8px 16px 15px 0;
+      color: white;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      font-family: "Roboto";
+    }
+    &:hover {
+      box-shadow: 0 0 6px $google-blue;
+    }
+    &:active {
+      background: $button-active-blue;
+    }
+  }
+  
 
   @media screen and (max-width: 960px) {
     .btn-signup{

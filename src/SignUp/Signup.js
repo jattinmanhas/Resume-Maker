@@ -100,7 +100,7 @@
 
 import React, { useRef } from "react";
 import { useUserContext } from "../context/userContext";
-import "./Signup.css"
+import "./Signup.scss"
   
 const Signup = () => {
   const emailRef = useRef();

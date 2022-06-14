@@ -16,8 +16,10 @@ import { Pagination, Navigation } from "swiper";
 export default function SwipeCarousel() {
   return (
     <>
+    <h1 style={{marginTop:"3rem", borderBottom:"1px solid black"}}>Professional Templates</h1>
+    
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={30}
         slidesPerGroup={4}
         loop={true}
@@ -28,7 +30,22 @@ export default function SwipeCarousel() {
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
       >
+        
         <SwiperSlide> <Link
               to='/template4'>
                 <img className="slide-img" src="./images/template4.png" alt="imag"  />
