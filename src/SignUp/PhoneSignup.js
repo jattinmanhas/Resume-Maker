@@ -5,6 +5,7 @@ import { Form, Alert } from "react-bootstrap";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { useUserContext } from "../context/userContext";
+import "./Signup.scss"
 
 const PhoneSignUp = () => {
   const [error, setError] = useState("");
@@ -44,11 +45,16 @@ const PhoneSignUp = () => {
 
   return (
     <>
-      <div className="p-4 box">
-        <h2 className="mb-3">Firebase Phone Auth</h2>
+      <div className="container1">
+      <Link to='/' style={{textAlign: "center", display:"block", paddingBottom: "1rem", color: "rgb(81, 81, 255)", textDecoration:"none", fontSize:"1.5rem", fontWeight:"bold"}}>
+          RESUME
+          <i style={{color: "rgb(81, 81, 255)"}} class='fab fa-firstdraft' />
+        </Link>
+        <h2 style={{marginBottom: "1rem"}}>Firebase Phone Auth</h2>
+
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={getOtp} style={{ display: !flag ? "block" : "none" }}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group controlId="formBasicEmail">
             <PhoneInput
               defaultCountry="IN"
               value={number}
@@ -59,17 +65,17 @@ const PhoneSignUp = () => {
           </Form.Group>
           <div className="button-right">
             <Link to="/phoneSignUp">
-              <button variant="secondary">Cancel</button>
+              <button className="phone__button">Cancel</button>
             </Link>
             &nbsp;
-            <button type="submit" variant="primary">
+            <button type="submit" className="phone__button">
               Send Otp
             </button>
           </div>
         </Form>
 
         <Form onSubmit={verifyOtp} style={{ display: flag ? "block" : "none" }}>
-          <Form.Group className="mb-3" controlId="formBasicOtp">
+          <Form.Group controlId="formBasicOtp">
             <Form.Control
               type="otp"
               placeholder="Enter OTP"
@@ -78,10 +84,10 @@ const PhoneSignUp = () => {
           </Form.Group>
           <div className="button-right">
             <Link to="/">
-              <button variant="secondary">Cancel</button>
+              <button className="phone__button">Cancel</button>
             </Link>
             &nbsp;
-            <button type="submit" variant="primary">
+            <button type="submit" className="phone__button">
               Verify
             </button>
           </div>
