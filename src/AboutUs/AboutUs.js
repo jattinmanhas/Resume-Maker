@@ -12,29 +12,29 @@ export default function AboutUs(){
 
 
     <div className="about-white">
-    <div className="row">
-            <div className="col-lg-6 col-md-12 col-sm-12">
+    <div className="about-us-title">
+            <div className="about-us-text">
                   
                 <h2 className="about-heading heading-white">Origin</h2>
-              <p className="about-p ">
-              The project website Resume Builder comes in reality in 2022 when Ashish and Palllav face issues while making resumes online , as almost every website ask
+              <p className="about-p">
+              The project website Resume Builder comes in reality in 2022 when our team faceed issues while making resumes online , as almost every website ask
               for premium membership for using good looking in demand resume templates.To solve issue we decided to build <b>ONLINE RESUME MAKER </b> with every
               single template available for free.</p>
       
               </div>
-              <div className="col-lg-6 col-md-12 col-sm-12">
+              <div className="about-us-img">
               <img src="./images/contactus1.png" style={{borderRadius: '3rem', width: 'auto', maxWidth: '480px'}}></img>
               </div>
       </div>
     
         <br/>
 
-        <div className="row">
+        <div className="about-us-second-title">
           
-            <div className="col-lg-6 col-md-12 col-sm-12">
+            <div>
             <img src="./images/resume-selecting.png" style={{borderRadius: '3rem', width: 'auto', maxWidth: '480px'}}></img>
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12">
+            <div>
             <h2 className="about-heading heading-white">Why Resume Builder?</h2>
               <p className="about-p ">
                It's free and easy to use.
@@ -52,8 +52,8 @@ export default function AboutUs(){
         </div>
       
     
-      <h2 className="about-heading heading-white">Aim</h2>
-        <p className="about-p ">
+      <h2 className="about-heading heading-white" style={{textAlign:"center", paddingTop:"5rem"}}>Aim</h2>
+        <p className="about-p " style={{textAlign:"center", display:'block'}}>
           Help everyone to land on their dream job.
         </p>
       </div>

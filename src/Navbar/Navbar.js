@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <>
       <nav className='navbar no-print'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+        <Link style={{color: "rgb(81, 81, 255)", fontWeight:"bold"}} to='/' className='navbar-logo' onClick={closeMobileMenu}>
           RESUME
           <i class='fab fa-firstdraft' />
         </Link>
@@ -69,7 +69,7 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              {user ? <button onClick={logoutUser}>Log out</button>:<button className='btn'> Sign In</button> }
+              {user ? <li onClick={logoutUser}>Log out</li>:<li> Sign In</li> }
             </Link>
           </li>
         </ul>

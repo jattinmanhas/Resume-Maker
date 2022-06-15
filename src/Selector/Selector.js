@@ -11,8 +11,8 @@ export default function Selector() {
           " We have some of the best single page resume Templates "
         </p>
       </div>
-      <div className="row">
-        <div className="col-lg-6 col-md-6 col-sm-12 col-xsm-12">
+      <div className="selector__templates">
+        <div className="selector_img">
           <Link to="/template6">
             <img
               className="image-selector"
@@ -21,7 +21,7 @@ export default function Selector() {
             ></img>
           </Link>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 col-xsm-12">
+        <div className="selector_img">
           <Link to="/template4">
             <img
               className="image-selector"
@@ -30,7 +30,7 @@ export default function Selector() {
             ></img>
           </Link>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 col-xsm-12">
+        <div className="selector_img">
           <Link to="/template2">
             <img
               className="image-selector"
@@ -39,7 +39,7 @@ export default function Selector() {
             ></img>
           </Link>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 col-xsm-12">
+        <div className="selector_img">
           <Link to="/template3">
             <img
               className="image-selector"
@@ -48,7 +48,7 @@ export default function Selector() {
             ></img>
           </Link>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 col-xsm-12">
+        <div className="selector_img">
           <Link to="/template1">
             {" "}
             <img
@@ -58,7 +58,7 @@ export default function Selector() {
             ></img>
           </Link>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 col-xsm-12">
+        <div className="selector_img">
           <Link to="/template5">
             {" "}
             <img
